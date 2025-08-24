@@ -1,0 +1,1 @@
+<img src="/fondo.png" alt="Imagen de Fondo">
