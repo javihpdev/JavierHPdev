@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import Home from './modules/home/Home.svelte';
+	import Contacto from './modules/contacto/Contacto.svelte';
 
     onMount(() => {
         console.log('Page mounted');
@@ -16,3 +17,6 @@
 
 
 <Home/>
+<div id="contacto" class="bg-[#0e151f]">
+    <Contacto/>
+</div>
