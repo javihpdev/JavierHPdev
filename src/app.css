@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-
+/* ANCHOR - SE UTILIZA PARA ELIMINAR LAS FLECHAS (SPINNERS) DE INPUTS NUMÉRICOS */
 @layer utilities {
     .no-spinners::-webkit-outer-spin-button,
     .no-spinners::-webkit-inner-spin-button {

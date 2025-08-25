@@ -1,9 +1,12 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+ type Props ={
+    class?: string;
+ }
 
-    onMount(() => {
-        console.log('AboutMe component mounted');
-    });
+ let {class: addClass=""} : Props = $props();
+
 </script>
+<div class="{addClass}">
 
-<p> Soy un desarrollador de software con experiencia en la creación de aplicaciones web utilizando Svelte y TypeScript.</p>
+    <p> Soy un desarrollador de software con experiencia en la creación de aplicaciones web utilizando Svelte y TypeScript.</p>
+</div>

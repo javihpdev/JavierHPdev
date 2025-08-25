@@ -6,8 +6,7 @@
         value?: string;
         class?: string;
     };
-
-    let {type, placeholder = "", value = "", class: addClass = ""}: Props = $props();
+    let {type, placeholder = "", value = $bindable(""), class: addClass = ""}: Props = $props();
 
 </script>
 
