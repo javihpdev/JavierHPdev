@@ -2,30 +2,30 @@ import type { RequestHandler } from "@sveltejs/kit";
 import { Resend } from "resend";
 import { RESEND_API_KEY, EMAIL_FROM, EMAIL_TO } from "$env/static/private";
 
-const resend = new Resend(RESEND_API_KEY) //ANCHOR - Hay que mirar de donde coger la key
+const resend = new Resend(RESEND_API_KEY)
 export const POST: RequestHandler = async ({ request }) => {
    try{
 
        const { nombre, telefono, email, mensaje } = await request.json();
        
-       if (!nombre || !telefono || !email || !mensaje) {
+       if (!nombre || !email || !mensaje) {
         return new Response(JSON.stringify({ error: "Faltan campos obligatorios" }), { status: 400 });
        }
 
-       const {data, error} = await resend.emails.send({
+       const result = await resend.emails.send({
         from: EMAIL_FROM,
         to: EMAIL_TO,
-        subject: "Nuevo mensaje de contacto",
+        subject: "Nuevo mensaje de contacto Porfolio Personal",
         html: `
           <h2>Nuevo mensaje de contacto</h2>
                 <p><strong>Nombre:</strong> ${nombre}</p>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Teléfono:</strong> ${telefono || 'No proporcionado'}</p>
                 <p><strong>Mensaje:</strong></p>
-                <p>${mensaje}</p> `
+                <p>${mensaje}</p>`
        });
-       if(error) {
-        console.error("Error al enviar el correo:", error);
+       if(result.error) {
+        console.error("Error al enviar el correo:", result.error);
         return new Response(JSON.stringify({ error: "Error al enviar el correo" }), { status: 500 });
        }
 

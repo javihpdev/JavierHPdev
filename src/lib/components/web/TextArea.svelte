@@ -3,10 +3,11 @@
     type Props = {
         class?: string;
         value?: string;
+        required?: boolean;
     };
 
-    let { class: addClass = "", value = $bindable("") }: Props = $props();
+    let { class: addClass = "", value = $bindable(""), required = false }: Props = $props();
 
 </script>
 
-<textarea class="caret-white bg-[#0e151f] text-white {addClass}" bind:value={value} placeholder="Escribe aquí el mensaje..." name="mensaje" cols="90" rows="5"></textarea>
+<textarea class="caret-white bg-[#0e151f] text-white {addClass}" bind:value={value} placeholder="Escribe aquí el mensaje..." name="mensaje" cols="90" rows="5" {required}></textarea>

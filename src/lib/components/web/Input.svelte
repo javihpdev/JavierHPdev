@@ -5,12 +5,14 @@
         placeholder?: string;
         value?: string;
         class?: string;
+        required?: boolean;
     };
-    let {type, placeholder = "", value = $bindable(""), class: addClass = ""}: Props = $props();
+    let {type, placeholder = "", value = $bindable(""), class: addClass = "", required = false}: Props = $props();
 
 </script>
 
 
 <input type={type} placeholder={placeholder} bind:value={value} 
     class="rounded-xl caret-white text-lg bg-transparent no-spinners text-white border-1 border-white {addClass}"
+    {required}
     />

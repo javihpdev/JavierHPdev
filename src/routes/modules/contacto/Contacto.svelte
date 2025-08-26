@@ -28,7 +28,7 @@
             if(response.ok && result.success){
                 alert("Mensaje enviado correctamente");
             } else{
-                alert(result.message || "Ha ocurrido un error");
+                console.log(result.message || "Ha ocurrido un error");
             }
         } catch (error){
             console.log("Ha ocurrido un errorsito");
@@ -42,12 +42,12 @@
     <p class="text-white text-2xl text-center">Contacta conmigo sin compromiso...</p>
     <form action="" method="post">
         <div class="flex   gap-4">
-            <Input type="text" placeholder="Nombre" bind:value={nombre}/>
+            <Input type="text" placeholder="Nombre" bind:value={nombre} required/>
             <Input type="number" placeholder="Telefono" bind:value={telefono}/>
-            <Input type="email" placeholder="Email" class="border-1" bind:value={email}/>
+            <Input type="email" placeholder="Email" class="border-1" bind:value={email} required/>
         </div>
         <div class="flex flex-col gap-4 justify-center items-center mt-4">
-            <TextArea class="border-1 rounded-xl border-white" bind:value={mensaje}/>
+            <TextArea class="border-1 rounded-xl border-white" bind:value={mensaje} required/>
             <Button type="button" text="Enviar" onclick={contacto}/>
         </div>
     </form>
