@@ -8,7 +8,7 @@
   let { class: addClass="" } : Props = $props();
 </script>
 
-<footer class="flex gap-5 justify-center bottom-0 w-full text-white p-10 bg-[#0e151f] shadow-2xl shadow-black {addClass}"> 
+<footer class="flex gap-5 justify-center bottom-0 w-full text-white p-10 bg-transparent border-t-1 border-white/30 shadow-black {addClass}"> 
   <div class="flex gap-1">
       <Copyright/> <span>2025</span>
   </div>

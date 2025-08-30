@@ -15,4 +15,4 @@
 
 </script>
 
-<a aria-label={ariaLabel} {href} class="underline {addClass}">{@render children?.()}</a>
+<a aria-label={ariaLabel} {href} class="{addClass}">{@render children?.()}</a>

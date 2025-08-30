@@ -6,7 +6,14 @@
  let {class: addClass=""} : Props = $props();
 
 </script>
-<div class="{addClass}">
+<div class="flex flex-col justify-center items-center p-5 gap-5 {addClass}">
+    <div>
+        <img src="/ImagenPerfilPorfolio.png" alt="imagenPerfil" class="rounded-xl"/>
+        <span>Sobre Mí</span>
 
-    <p> Soy un desarrollador de software con experiencia en la creación de aplicaciones web utilizando Svelte y TypeScript.</p>
+
+    </div>
+    
+
+    <p class="text-black"> Soy un desarrollador de software con experiencia en la creación de aplicaciones web utilizando Svelte y TypeScript.</p>
 </div>

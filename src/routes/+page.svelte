@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import Home from './modules/home/Home.svelte';
+    import Home from './modules/inicio/Home.svelte';
 	import Contacto from './modules/contacto/Contacto.svelte';
 	import Header from '$lib/components/common/Header.svelte';
 
@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" href="/ImagenPerfilPorfolio.png">
 </svelte:head>
 
-<Header/>
 <Home/>
-<div id="contacto" class="bg-[#0e151f]">
-<Contacto/>
-</div>
+
+
+
+
