@@ -7,8 +7,8 @@
 
 </script>
 <div class="flex flex-col justify-center items-center p-5 gap-5 {addClass}">
-    <div>
-        <img src="/ImagenPerfilPorfolio.png" alt="imagenPerfil" class="rounded-xl"/>
+    <div class="flex flex-col justify-center items-center gap-4">
+        <img src="/src/lib/images/ImagenPerfilPorfolio.webp" alt="imagenPerfil" class="rounded-xl w-60 h-75 "/>
         <span>Sobre Mí</span>
 
 

@@ -57,9 +57,8 @@
 <main class="min-h-screen w-full max-w-full flex flex-col md:flex-row justify-center items-center md:gap-10 gap-8">
    <section class="flex flex-col md:flex-row  justify-center gap-5 p-5">
        <aside class="flex flex-col items-center gap-5 p-5">
-               <p class="text-center text-2xl text-white">REDES SOCIALES</p>
           
-           <div class="flex md:flex-col flex-row pt-5 md:pt-10 text-center md:gap-20 gap-10  text-white">
+           <div class="flex md:flex-col flex-row pt-5 md:pt-20 text-center md:gap-20 gap-10  text-white">
                <GitHub class="w-15 h-15"/>
                <LinkedIn class="w-15 h-15"/>
            </div>
