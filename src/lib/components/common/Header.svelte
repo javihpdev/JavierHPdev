@@ -6,6 +6,12 @@
    }
 
    let { class: addClass="" } : Props = $props();
+
+   let isOpen = false;
+
+   function toggleClick() {
+      isOpen = !isOpen;
+   }
 </script>
 
 <header class="flex justify-between text-lg fixed w-full text-white p-5 bg-transparent z-50 {addClass}">
