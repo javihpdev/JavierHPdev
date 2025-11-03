@@ -12,7 +12,9 @@
 </script>
 
 
+
+
 <input type={type} placeholder={placeholder} bind:value={value} 
-    class="rounded-xl caret-white text-lg bg-transparent no-spinners text-white border-1 border-white {addClass}"
+    class="caret-white no-spinners text-white focus:outline-none focus:shadow-none focus:ring-0 {addClass}"
     {required}
-    />
+    />  
