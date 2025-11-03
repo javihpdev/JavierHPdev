@@ -1,6 +1,4 @@
 <script lang="ts">
-	import GitHub from '../footer/GitHub.svelte';
-	import LinkedIn from '../footer/LinkedIn.svelte';
 	import Enlace from '../web/Enlace.svelte';
 
 	type Props = {
@@ -25,8 +23,8 @@
 				<p class="text-center text-2xl font-extrabold text-white">JavihpDev</p>
 
 			</a>
-			<GitHub class="text-white w-25 h-32 hover:text-gray-400 hover:scale-110 transition-all duration-700" />
-			<LinkedIn class="text-white w-25 h-32 hover:text-gray-400 hover:scale-110 transition-all duration-700" />
+			<!-- <GitHub class="text-white w-25 h-32 hover:text-gray-400 hover:scale-110 transition-all duration-700" /> -->
+			<!-- <LinkedIn class="text-white w-25 h-32 hover:text-gray-400 hover:scale-110 transition-all duration-700" /> -->
 
 		</aside>
 		<div class="flex flex-col items-center justify-center">
