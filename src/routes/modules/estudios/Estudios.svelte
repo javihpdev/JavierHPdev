@@ -8,7 +8,7 @@
 
 </script>
 
-<div class="flex flex-col justify-center max-h-screen items-center p-5 text-white gap-5 {addClass}">
+<div class="flex flex-col justify-center max-h-screen items-center p-5 text-white gap-5 {addClass}">3
     <div
       id="estudios"
       class="flex flex-col w-full justify-center md:text-center items-center gap-3"

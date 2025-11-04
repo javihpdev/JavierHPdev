@@ -1,4 +1,5 @@
 <script lang="ts">
+	import NavBar from '$lib/components/common/NavBar.svelte';
     import '../app.css';
     let { children } = $props();
 </script>
@@ -8,4 +9,6 @@
     <title>Javier Hernández Pérez</title>
     <link rel="icon" type="image/png" href="/src/lib/assets/images/ImagenPerfilPorfolio.webp">
 </svelte:head>
+
+<NavBar />
         {@render children?.()}

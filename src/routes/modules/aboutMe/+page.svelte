@@ -1,8 +1,5 @@
 <script lang="ts">
-	import Footer from "$lib/components/common/Footer.svelte";
-	import Header from "$lib/components/common/Header.svelte";
 	import ImageDesplegable from "$lib/components/desplegableImagen/ImageDesplegable.svelte";
-	import AboutMe from "./AboutMe.svelte";
 
 
 
