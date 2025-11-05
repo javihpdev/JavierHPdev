@@ -40,16 +40,16 @@
                             Desarrollo de Aplicaciones Web
                         </h2>
                         <p class="text-xl text-purple-400 font-medium mb-2">LinkiaFP</p>
-                        <p class="text-slate-400">2022 - 2024</p>
+                        <p class="text-slate-400">2023 - 2025</p>
                     </div>
                     
                     <!-- Institution Logo -->
                     <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 hover:scale-105 transition-all duration-300 shadow-lg">
-                        <a href="https://goo.su/b9F3U4" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkiafp.es/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb&utm_content=linkiafpadistancia" target="_blank" rel="noopener noreferrer">
                             <img 
                                 src="/images/nlogo-linkia.webp" 
                                 alt="LinkiaFP Logo" 
-                                class="h-20 w-auto filter brightness-110"
+                                class="h-10 filter brightness-110"
                             />
                         </a>
                     </div>

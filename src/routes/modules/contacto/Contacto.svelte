@@ -8,12 +8,13 @@
     let nombre = $state('');
     let telefono = $state('');
     let email = $state('');
+    let asunto = $state('');
     let mensaje = $state('');
     let enviando = $state(false);
 
     async function contacto() {
         // Validar campos requeridos
-        if (!nombre || !email || !mensaje) {
+        if (!nombre || !email || !mensaje || !asunto) {
             alert('Por favor completa todos los campos obligatorios');
             return;
         }
@@ -30,6 +31,7 @@
                     nombre,
                     telefono,
                     email,
+                    asunto,
                     mensaje
                 })
             });
@@ -42,6 +44,7 @@
                 nombre = '';
                 telefono = '';
                 email = '';
+                asunto = '';
                 mensaje = '';
             } else {
                 alert(result.error || 'Ha ocurrido un error');
@@ -62,7 +65,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Header Section -->
         <div class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
+            <h1 class="text-5xl md:text-6xl p-3 font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
                 Contacta Conmigo
             </h1>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
@@ -128,7 +131,7 @@
                     <h3 class="text-xl font-semibold text-white mb-6 text-center">Sígueme en</h3>
                     <div class="flex justify-center space-x-6">
                         <a 
-                            href="https://github.com/JavierHPDev" 
+                            href="https://github.com/javihpdev" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="group p-4 bg-slate-700/50 rounded-2xl hover:bg-slate-600/50 transition-all duration-300 hover:scale-110"
@@ -136,7 +139,7 @@
                             <GitHub class="w-8 h-8 text-slate-400 group-hover:text-white transition-colors" />
                         </a>
                         <a 
-                            href="https://linkedin.com/in/javier-hernandez-perez-dev" 
+                            href="https://www.linkedin.com/in/javihdezperez" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="group p-4 bg-slate-700/50 rounded-2xl hover:bg-slate-600/50 transition-all duration-300 hover:scale-110"
@@ -155,10 +158,10 @@
                 <div class="relative bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8">
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold text-white mb-2">Envíame un mensaje</h2>
-                        <p class="text-slate-400">Cuéntame sobre tu proyecto y me pondré en contacto contigo pronto.</p>
+                        <p class="text-slate-400">Me pondré en contacto contigo pronto.</p>
                     </div>
 
-                    <form on:submit|preventDefault={contacto} class="space-y-6">
+                    <form class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Nombre -->
                             <div class="space-y-2">
@@ -202,6 +205,19 @@
                             />
                         </div>
 
+                        <!-- Asunto -->
+                          <div class="space-y-2">
+                            <label for="asunto" class="block text-sm font-medium text-slate-300">
+                                Asunto *
+                            </label>
+                            <Input 
+                                type="text" 
+                                placeholder="Asunto del mensaje" 
+                                bind:value={asunto} 
+                                required
+                                class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:border-blue-500 focus:ring-0 focus:outline-none transition-colors"
+                            />
+                        </div>
                         <!-- Mensaje -->
                         <div class="space-y-2">
                             <label for="mensaje" class="block text-sm font-medium text-slate-300">

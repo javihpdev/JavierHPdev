@@ -13,7 +13,7 @@
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<!-- Header Section -->
 		<div class="text-center mb-16">
-			<h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
+			<h1 class="text-5xl md:text-6xl p-3 font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
 				Experiencia Profesional
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>

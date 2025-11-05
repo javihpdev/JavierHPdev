@@ -11,12 +11,12 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Header Section -->
         <div class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
+            <h1 class="text-5xl md:text-6xl p-3 font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
                 Mis Proyectos
             </h1>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
             <p class="text-xl text-slate-400 mt-6 max-w-3xl mx-auto">
-                Una selección de proyectos que demuestran mis habilidades en desarrollo web moderno y mi pasión por crear experiencias digitales excepcionales.
+                Una selección de proyectos que demuestran mis habilidades en desarrollo web moderno y mi pasión por crear experiencias digitales.
             </p>
         </div>
 
@@ -45,7 +45,7 @@
                             />
                             <!-- Overlay on hover -->
                             {#if showGif}
-                                <div class="absolute inset-0 bg-blue-500/10 backdrop-blur-[1px]"></div>
+                                <div class="absolute inset-0 bg-blue-500/10"></div>
                             {/if}
                         </div>
                         
@@ -114,9 +114,6 @@
                                 class="h-full w-full {showGifHistoriatelo ? 'object-cover' : 'object-contain'} transition-all duration-300"
                                 alt="Vista previa del proyecto Historiatelo"
                             />
-                            {#if showGifHistoriatelo}
-                                <div class="absolute inset-0 bg-green-500/10 backdrop-blur-[1px]"></div>
-                            {/if}
                         </div>
                         
                         <div class="space-y-4">
@@ -166,7 +163,7 @@
 
             <!-- Proyecto 3: GePro -->
             <div class="group relative">
-                <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a 
                     href="/modules/proyectos/geprobeta" 
@@ -174,21 +171,18 @@
                     onmouseleave={() => (showGifGepro = false)}
                     class="relative block"
                 >
-                    <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-purple-500/50">
+                    <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-green-500/50">
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <img
                                 src={showGifGepro ? '/images/GeproPreview.png' : '/images/LogoEmpresa.png'}
                                 class="h-full w-full {showGifGepro ? 'object-cover' : 'object-contain'} transition-all duration-300"
                                 alt="Vista previa del proyecto GePro"
-                            />
-                            {#if showGifGepro}
-                                <div class="absolute inset-0 bg-purple-500/10 backdrop-blur-[1px]"></div>
-                            {/if}
+                            /> 
                         </div>
                         
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                                <h3 class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
                                     GePro
                                 </h3>
                                 <div class="flex items-center">
