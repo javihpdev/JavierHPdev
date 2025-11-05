@@ -3,10 +3,11 @@
     type Props = {
         class?: string;
         value?: string;
+        placeholder?: string;
         required?: boolean;
     };
 
-    let { class: addClass = "", value = $bindable(""), required = false }: Props = $props();
+    let { class: addClass = "", value = $bindable(""), placeholder = "", required = false }: Props = $props();
 
 </script>
 

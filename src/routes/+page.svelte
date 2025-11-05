@@ -1,11 +1,10 @@
 <script>
-    import Home from './modules/inicio/Home.svelte';
+	import Inicio from './modules/inicio/Inicio.svelte';
 
 
 </script>
 
-<Home/>
-
+<Inicio />
 
 
 

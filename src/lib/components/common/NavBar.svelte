@@ -8,7 +8,7 @@
     let { class: addClass=""} : Props = $props();
 </script>
 
-<nav class="fixed flex w-full justify-between px-10 py-5 items-center bg-transparent gap-50">
+<nav class="flex w-full justify-between px-10 py-5 bg-transparent items-center  gap-50 z-100 {addClass}">
     <div class="flex
      text-white font-bold text-2xl tracking-widest">
         <p>JHPDEV</p>
