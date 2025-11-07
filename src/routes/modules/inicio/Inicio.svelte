@@ -37,7 +37,7 @@ class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slat
 style="transform: translateY({scrollY * 0.5}px);"
 >
 <NavBar class="fixed top-0 left-0 right-0 z-50 bg-gray-800/80 backdrop-blur-sm" />
-    <div class="flex flex-col w-full justify-center items-center">
+    <div class="flex flex-col w-full mt-40 justify-center items-center">
         <!-- Contenido del Hero -->
         <div class="flex flex-col w-full justify-center items-center">
             <!-- Nombre con gradiente animado -->
