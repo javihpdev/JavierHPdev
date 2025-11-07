@@ -45,7 +45,7 @@
           </div>
       <!-- Menu con los links al desplegar el menu hamburguesa -->
       <div class={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}>
-      <div class="flex flex-col lg:hidden items-center gap-5 text-white grid grid-cols-2 p-4 text-lg ">
+      <div class="flex flex-col lg:hidden items-center gap-5 text-white p-4 text-lg font-bold ">
               <button onclick={closeMenu}>
               <Enlace class="hover:text-gray-600 transition-colors duration-500" href="https://www.airsoftatlantico.com/">Inicio</Enlace>
             </button>

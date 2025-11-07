@@ -41,7 +41,6 @@ export const POST: RequestHandler = async ({ request }) => {
        
        await transporter.sendMail(mailOptions);
 
-    // ...existing code...
 const confirmOptions = {
     from: `"Javier Hernández Pérez" <${EMAIL_FROM}>`,
     to: email,
