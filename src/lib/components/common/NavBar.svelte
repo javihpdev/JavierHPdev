@@ -16,13 +16,12 @@
     }
 </script>
 
-<nav class="flex flex-col lg:flex-row w-full lg:justify-between justify-center  px-10 py-5 bg-transparent items-center   gap-5 lg:gap-50 z-100 {addClass}">
-    <div class="flex
-     text-white font-bold text-2xl tracking-widest">
+<nav class="flex flex-col lg:flex-row w-full max-w-full justify-center py-5 bg-transparent items-center gap-5  {addClass}">
+    <div class="flex justify-center items-center w-full text-white font-bold text-2xl tracking-widest">
         <p>JHPDEV</p>
     </div>
 
-        <div class=" gap-10 text-white font-semibold text-sm lg:flex hidden">
+        <div class=" gap-10 text-white font-semibold text-sm lg:flex w-full max-w-full hidden">
             <Enlace href="#inicio" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">INICIO</Enlace>
             <Enlace href="#experiencia" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">EXPERIENCIA</Enlace>
             <Enlace href="#estudios" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">ESTUDIOS</Enlace>

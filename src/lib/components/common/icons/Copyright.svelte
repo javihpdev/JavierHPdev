@@ -1,3 +1,10 @@
+<script lang="ts">
+  type Props = {
+    class?: string;
+  }
+
+  let { class: addClass=""} : Props = $props();
+</script>
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +16,7 @@
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="lucide lucide-copyright"
+      class="lucide lucide-copyright {addClass}"
     >
       <circle cx="12" cy="12" r="10" />
       <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />

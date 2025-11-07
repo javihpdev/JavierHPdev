@@ -7,6 +7,7 @@
     import Experiencia from "../experiencia/Experiencia.svelte";
 	import GitHub from "$lib/components/common/icons/GitHub.svelte";
 	import LinkedIn from "$lib/components/common/icons/LinkedIn.svelte";
+	import Footer from "$lib/components/common/Footer.svelte";
 
     type Props = {
         class?: string;
@@ -98,6 +99,11 @@ style="transform: translateY({scrollY * 0.5}px);"
 <!-- Sección de Contacto -->
 <section class="relative z-10">
     <Contacto />
+</section>
+
+<!-- Sección de footer -->
+<section class="relative z-10">
+    <Footer />
 </section>
 
 

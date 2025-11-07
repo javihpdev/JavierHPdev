@@ -60,7 +60,7 @@
 
 <div 
     id="contacto"
-    class="min-h-screen w-full bg-gradient-to-br from-gray-900 via-gray-900 to-slate-950 py-20"
+    class="min-h-screen w-full bg-gray-900 py-20"
 >
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Header Section -->

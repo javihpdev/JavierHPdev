@@ -1,25 +1,34 @@
 <script lang="ts">
     import Copyright from "./icons/Copyright.svelte";
-	// import GitHub from "./icons/GitHub.svelte";
-	// import LinkedIn from "./icons/LinkedIn.svelte";
+    import GitHub from "./icons/GitHub.svelte";
+    import LinkedIn from "./icons/LinkedIn.svelte";
 
-  type Props = {
-       class?: string;
-   }
+    type Props = {
+        class?: string;
+    }
 
-  let { class: addClass="" } : Props = $props();
+    let { class: addClass="" } : Props = $props();
 </script>
 
-<footer class="flex gap-5 justify-center bottom-0 w-full text-white p-10 bg-transparent border-t-1 border-white/30 shadow-black {addClass}"> 
-  <div class="flex gap-1">
-      <Copyright/> <span>2025</span>
-  </div>
-  <span>|</span>
-  <p>Javier Hernández Pérez</p>
-  <span>|</span>
-  <p class="font-bold">PORFOLIO PERSONAL</p>
-  <span>|</span>
-  <p class="font-bold">Redes Sociales:</p>
-  <!-- <a href="https://github.com/JavierHPdev" target="_blank"><GitHub class="hover:scale-110 transition-all duration-700 " /></a> -->
-  <!-- <a href="https://www.linkedin.com/in/javierhpdev/" target="_blank"><LinkedIn class="hover:scale-110 transition-all duration-700" /></a> -->
+<footer class="w-full bg-gradient-to-br from-gray-900 via-gray-900 to-slate-950 py-8 px-4 flex flex-col items-center gap-6 shadow-lg shadow-black/30 {addClass}">
+    <div class="flex items-center gap-3">
+        <Copyright class="w-5 h-5 text-blue-400" />
+        <span class="flex text-sm text-slate-400 gap-3"><span>2025</span> <span class="font-semibold">Javier Hernández Pérez</span></span>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-3">
+        <span class="font-bold text-white">Portfolio Personal</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="text-slate-400">Redes Sociales:</span>
+        <a href="https://github.com/javihpdev" target="_blank" aria-label="GitHub"
+            class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors duration-300 shadow hover:scale-110">
+            <GitHub class="w-6 h-6 text-white" />
+        </a>
+        <a href="https://www.linkedin.com/in/javihdezperez" target="_blank" aria-label="LinkedIn"
+            class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-blue-700 transition-colors duration-300 shadow hover:scale-110">
+            <LinkedIn class="w-6 h-6 text-white" />
+        </a>
+    </div>
+    <div class="text-xs text-slate-500 mt-2 text-center">
+        Desarrollado con <a href="https://svelte.dev/" target="_blank" class="text-blue-400 font-semibold underline italic">Svelte</a> &copy; Todos los derechos reservados.
+    </div>
 </footer>

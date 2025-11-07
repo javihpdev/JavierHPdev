@@ -81,6 +81,9 @@
                                 <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-medium border border-cyan-500/30">
                                     TailwindCSS
                                 </span>
+                                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium border border-yellow-500/30">
+                                    JavaScript
+                                </span>
 								 
                             </div>
                             
@@ -115,7 +118,7 @@
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil y tablet siempre mostrar GIF -->
                             <img
-                                src="/gif/airsoft-preview.gif"
+                                src="/gif/historiatelopreview.gif"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa del proyecto Historiatelo"
                             />
