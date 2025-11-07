@@ -18,7 +18,7 @@
             </h1>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
             <p class="text-xl text-slate-400 mt-6 max-w-3xl mx-auto">
-                Mi formación académica me ha proporcionado una base sólida en desarrollo web y las tecnologías más demandadas del mercado.
+                Mi formación académica me ha proporcionado una base en desarrollo web y en las tecnologías más demandadas del mercado como JavaScript, HTML, CSS, PHP y Bases de Datos: MySQL.
             </p>
         </div>
 
@@ -131,7 +131,7 @@
                             </svg>
                         </div>
                         <h4 class="text-lg font-semibold text-green-400 mb-2">Proyecto Final</h4>
-                        <p class="text-sm text-slate-400">Desarrollo completo de aplicación web</p>
+                        <p class="text-sm text-slate-400">Desarrollo completo de aplicación web: <a href="#gepro" class="font-semibold bg-gradient-to-r bg-clip-text text-transparent from-green-400  to-orange-400 italic">GePro</a></p>
                     </div>
 
                     <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 text-center">
@@ -141,7 +141,7 @@
                             </svg>
                         </div>
                         <h4 class="text-lg font-semibold text-blue-400 mb-2">Prácticas</h4>
-                        <p class="text-sm text-slate-400">Experiencia real en empresa</p>
+                        <p class="text-sm text-slate-400">Experiencia real en empresa: <a href="#historiatelo" class="font-semibold bg-gradient-to-r bg-clip-text text-transparent from-white to-pink-400 italic">TipoMedia</a></p>
                     </div>
 
                     <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 text-center">

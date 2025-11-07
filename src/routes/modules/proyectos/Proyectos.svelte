@@ -103,7 +103,7 @@
             </div>
 
             <!-- Proyecto 2: Historiatelo -->
-            <div class="group relative">
+            <div id="historiatelo" class="group relative">
                 <div class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-[#00ACC9] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a 
@@ -177,7 +177,7 @@
             </div>
 
             <!-- Proyecto 3: GePro -->
-            <div class="group relative">
+            <div id="gepro" class="group relative">
                 <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a 

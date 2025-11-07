@@ -19,14 +19,16 @@
         <span class="font-bold text-white">Portfolio Personal</span>
         <span class="hidden md:inline text-slate-600">|</span>
         <span class="text-slate-400">Redes Sociales:</span>
-        <a href="https://github.com/javihpdev" target="_blank" aria-label="GitHub"
-            class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors duration-300 shadow hover:scale-110">
-            <GitHub class="w-6 h-6 text-white" />
-        </a>
-        <a href="https://www.linkedin.com/in/javihdezperez" target="_blank" aria-label="LinkedIn"
-            class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-blue-700 transition-colors duration-300 shadow hover:scale-110">
-            <LinkedIn class="w-6 h-6 text-white" />
-        </a>
+        <div class="flex items-center gap-3">
+            <a href="https://github.com/javihpdev" target="_blank" aria-label="GitHub"
+                class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors duration-300 shadow hover:scale-110">
+                <GitHub class="w-6 h-6 text-white" />
+            </a>
+            <a href="https://www.linkedin.com/in/javihdezperez" target="_blank" aria-label="LinkedIn"
+                class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-blue-700 transition-colors duration-300 shadow hover:scale-110">
+                <LinkedIn class="w-6 h-6 text-white" />
+            </a>
+        </div>
     </div>
     <div class="text-xs text-slate-500 mt-2 text-center">
         Desarrollado con <a href="https://svelte.dev/" target="_blank" class="text-blue-400 font-semibold underline italic">Svelte</a> &copy; Todos los derechos reservados.

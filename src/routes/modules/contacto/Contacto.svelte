@@ -69,9 +69,6 @@
                 Contacta Conmigo
             </h1>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
-            <p class="text-xl text-slate-400 mt-6 max-w-3xl mx-auto">
-                ¿Tienes un proyecto en mente? ¡Me encantaría conocer más sobre tu idea y cómo puedo ayudarte a hacerla realidad!
-            </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -158,7 +155,7 @@
                 <div class="relative bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8">
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold text-white mb-2">Envíame un mensaje</h2>
-                        <p class="text-slate-400">Me pondré en contacto contigo pronto.</p>
+                        <p class="text-slate-400">Me pondré en contacto contigo lo más pronto posible.</p>
                     </div>
 
                     <form class="space-y-6">
