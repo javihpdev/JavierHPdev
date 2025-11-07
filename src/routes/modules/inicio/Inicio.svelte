@@ -38,7 +38,7 @@ style="transform: translateY({scrollY * 0.5}px);"
 <NavBar class="fixed top-0 left-0 right-0 z-50 bg-gray-800/80 backdrop-blur-sm" />
     <div class="flex flex-col w-full justify-center items-center">
         <!-- Contenido del Hero -->
-        <div class="flex flex-col w-250">
+        <div class="flex flex-col w-full">
             <!-- Nombre con gradiente animado -->
             <h1 class="gradient-text text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-center leading-tight">
                 Javier Hernández Pérez

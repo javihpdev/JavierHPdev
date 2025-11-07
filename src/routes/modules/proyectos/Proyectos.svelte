@@ -28,7 +28,7 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a
-                    href="https://javihpdev.github.io/AirsoftAtlantico/"
+                    href="https://www.airsoftatlantico.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onmouseenter={() => (showGif = true)}
@@ -38,15 +38,19 @@
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-blue-500/50">
                         <!-- Project Image -->
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
+                            <!-- En móvil y tablet siempre mostrar GIF -->
                             <img
-                                src={showGif ? '/gif/airsoft-preview.gif' : '/images/logo.png'}
-                                class="h-full w-full {showGif ? 'object-cover' : 'object-contain'} transition-all duration-300"
+                                src="/gif/airsoft-preview.gif"
+                                class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa del proyecto Airsoft Atlántico"
                             />
-                            <!-- Overlay on hover -->
-                            {#if showGif}
-                                <div class="absolute inset-0 bg-blue-500/10"></div>
-                            {/if}
+                            
+                            <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
+                            <img
+                                src={showGif ? '/gif/airsoft-preview.gif' : '/images/logo.png'}
+                                class="h-full w-full {showGif ? 'object-cover' : 'object-contain'} transition-all duration-300 hidden md:block"
+                                alt="Vista previa del proyecto Airsoft Atlántico"
+                            />
                         </div>
                         
                         <!-- Project Info -->
@@ -108,10 +112,18 @@
                     class="relative block"
                 >
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-yellow-500/50">
-                        <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
+                           <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
+                            <!-- En móvil y tablet siempre mostrar GIF -->
+                            <img
+                                src="/gif/airsoft-preview.gif"
+                                class="h-full w-full object-cover transition-all duration-300 block md:hidden"
+                                alt="Vista previa del proyecto Historiatelo"
+                            />
+                            
+                            <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
                             <img
                                 src={showGifHistoriatelo ? '/gif/historiatelopreview.gif' : '/images/historiatelo.png'}
-                                class="h-full w-full {showGifHistoriatelo ? 'object-cover' : 'object-contain'} transition-all duration-300"
+                                class="h-full w-full {showGifHistoriatelo ? 'object-cover' : 'object-contain'} transition-all duration-300 hidden md:block"
                                 alt="Vista previa del proyecto Historiatelo"
                             />
                         </div>
