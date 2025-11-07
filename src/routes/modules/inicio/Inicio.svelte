@@ -85,6 +85,7 @@ style="transform: translateY({scrollY * 0.5}px);"
     <Contacto />
 </section>
 
+
 <style>
     .gradient-text {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

@@ -6,7 +6,6 @@ type Props = {
 
 let { class: addClass="", children } : Props = $props();
 </script>
-<a href="https://www.linkedin.com/in/javihdezperez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	width="24"
@@ -26,5 +25,3 @@ let { class: addClass="", children } : Props = $props();
 		y="9"
 	/><circle cx="4" cy="4" r="2" /></svg
 >
-
-</a>
