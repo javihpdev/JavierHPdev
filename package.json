@@ -57,6 +57,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.4.0",
 		"@sveltejs/adapter-vercel": "^6.1.1",
-		"nodemailer": "^7.0.10"
+		"nodemailer": "^7.0.10",
+		"nopt": "^9.0.0"
 	}
 }
