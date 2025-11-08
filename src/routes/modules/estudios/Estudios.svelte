@@ -58,8 +58,8 @@
                 <!-- Description -->
                 <div class="relative z-10 mb-10">
                     <p class="text-lg text-slate-300 leading-relaxed text-center lg:text-left">
-                        Formación especializada en el desarrollo de aplicaciones web modernas, cubriendo tanto el frontend como el backend. 
-                        Adquirí conocimientos sólidos en las tecnologías fundamentales del desarrollo web y las mejores prácticas de la industria.
+                        Formación especializada en el desarrollo de aplicaciones web, cubriendo tanto el FrontEnd como el BackEnd. 
+                        Adquirí conocimientos en las tecnologías fundamentales del desarrollo web como son <span class="text-yellow-400 font-semibold">JavaScript</span>, <span class="text-orange-400 font-semibold">HTML</span>, <span class="text-blue-400 font-semibold">CSS</span> y <span class="text-purple-400 font-semibold">PHP</span>.
                     </p>
                 </div>
 
@@ -69,7 +69,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         
                         <!-- JavaScript Card -->
-                        <div class="group bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+                        <div class="flex justify-center items-center group bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border border-yellow-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                             <div class="flex flex-col items-center text-center">
                                 <div class="w-16 h-16 bg-yellow-500/20 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-yellow-500/30 transition-colors">
                                     <svg class="w-8 h-8 text-yellow-500" viewBox="0 0 24 24" fill="currentColor">
@@ -77,12 +77,11 @@
                                     </svg>
                                 </div>
                                 <h4 class="text-lg font-semibold text-yellow-400 mb-2">JavaScript</h4>
-                                <p class="text-sm text-slate-400">Desarrollo de lógica interactiva en el lado del cliente</p>
                             </div>
                         </div>
 
                         <!-- HTML Card -->
-                        <div class="group bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+                        <div class="flex justify-center items-center group bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                             <div class="flex flex-col items-center text-center">
                                 <div class="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-orange-500/30 transition-colors">
                                     <svg class="w-8 h-8 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
@@ -90,12 +89,11 @@
                                     </svg>
                                 </div>
                                 <h4 class="text-lg font-semibold text-orange-400 mb-2">HTML5</h4>
-                                <p class="text-sm text-slate-400">Estructuración semántica de contenido web</p>
                             </div>
                         </div>
 
                         <!-- CSS Card -->
-                        <div class="group bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+                        <div class="flex justify-center items-center group bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                             <div class="flex flex-col items-center text-center">
                                 <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
                                     <svg class="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
@@ -103,12 +101,11 @@
                                     </svg>
                                 </div>
                                 <h4 class="text-lg font-semibold text-blue-400 mb-2">CSS3</h4>
-                                <p class="text-sm text-slate-400">Estilos avanzados y diseño responsive</p>
                             </div>
                         </div>
 
                         <!-- PHP Card -->
-                        <div class="group bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
+                        <div class="flex justify-center items-center group bg-gradient-to-br from-purple-500/10 to-indigo-500/10 border border-purple-500/20 rounded-2xl p-6 hover:scale-105 transition-all duration-300">
                             <div class="flex flex-col items-center text-center">
                                 <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-purple-500/30 transition-colors">
                                     <svg class="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="currentColor">
@@ -116,7 +113,6 @@
                                     </svg>
                                 </div>
                                 <h4 class="text-lg font-semibold text-purple-400 mb-2">PHP</h4>
-                                <p class="text-sm text-slate-400">Desarrollo backend y gestión de servidores</p>
                             </div>
                         </div>
                     </div>
@@ -124,8 +120,8 @@
 
                 <!-- Achievement Highlights -->
                 <div class="relative z-10 mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-6 text-center">
-                        <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <div class="bg-gradient-to-br group from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300">
+                        <div class="w-12 h-12 bg-green-500/20 group-hover:bg-green-500/30 transition-colors rounded-xl flex items-center justify-center mx-auto mb-4">
                             <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
@@ -134,8 +130,8 @@
                         <p class="text-sm text-slate-400">Desarrollo completo de aplicación web: <a href="#gepro" class="font-semibold bg-gradient-to-r bg-clip-text text-transparent from-green-400  to-orange-400 italic">GePro</a></p>
                     </div>
 
-                    <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 text-center">
-                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <div class="bg-gradient-to-br from-blue-500/10 group hover:scale-105 transition-all duration-300 to-cyan-500/10 border border-blue-500/20 rounded-2xl p-6 text-center">
+                        <div class="w-12 h-12 bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors rounded-xl flex items-center justify-center mx-auto mb-4">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
@@ -144,14 +140,13 @@
                         <p class="text-sm text-slate-400">Experiencia real en empresa: <a href="#historiatelo" class="font-semibold bg-gradient-to-r bg-clip-text text-transparent from-white to-pink-400 italic">TipoMedia</a></p>
                     </div>
 
-                    <div class="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 text-center">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <div class="flex justify-center items-center group flex-col hover:scale-105 transition-all duration-300 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-2xl p-6 text-center">
+                        <div class="w-12 h-12 bg-purple-500/20 group-hover:bg-purple-500/30 transition-colors rounded-xl flex items-center justify-center mx-auto mb-4">
                             <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
                         </div>
                         <h4 class="text-lg font-semibold text-purple-400 mb-2">Certificación</h4>
-                        <p class="text-sm text-slate-400">Título oficial reconocido</p>
                     </div>
                 </div>
             </div>

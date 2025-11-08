@@ -22,10 +22,10 @@
     </div>
 
         <div class=" gap-10 text-white font-semibold text-sm lg:flex w-full max-w-full hidden">
-            <Enlace href="#inicio" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">INICIO</Enlace>
+          <Enlace href="#inicio" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">INICIO</Enlace>
+          <Enlace href="#proyectos" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">PROYECTOS</Enlace>
             <Enlace href="#experiencia" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">EXPERIENCIA</Enlace>
             <Enlace href="#estudios" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">ESTUDIOS</Enlace>
-            <Enlace href="#proyectos" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">PROYECTOS</Enlace>
             <Enlace href="#contacto" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">CONTACTO</Enlace>
         </div>
 
@@ -46,13 +46,13 @@
       <div class={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}>
       <div class="flex flex-col lg:hidden items-center gap-5 text-white p-4 text-lg font-bold ">
               <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="https://www.airsoftatlantico.com/">Inicio</Enlace>
-            </button>
-            <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#experiencia">Experiencia</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="/">Inicio</Enlace>
             </button>
             <button onclick={closeMenu}>
               <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#proyectos">Proyectos</Enlace>
+            </button>
+            <button onclick={closeMenu}>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#experiencia">Experiencia</Enlace>
             </button>
             <button onclick={closeMenu}>
               <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#estudios">Estudios</Enlace>

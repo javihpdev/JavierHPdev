@@ -28,7 +28,7 @@
 					<div class="mb-6 text-center md:mb-0 md:text-left">
 						<h2 class="mb-2 text-3xl font-bold text-white">TipoMedia</h2>
 						<p class="text-xl font-medium text-blue-400">Full Stack Developer</p>
-						<p class="mt-2 text-slate-400">2025 - Presente</p>
+						<p class="mt-2 text-slate-400">ene 2025 - Presente</p>
 					</div>
 
 					<!-- Company Logo -->
@@ -82,9 +82,6 @@
 									/>
 								</div>
 								<h4 class="mb-2 text-lg font-semibold text-white">Svelte</h4>
-								<p class="text-center text-sm text-slate-400">
-									Framework moderno para desarrollo web
-								</p>
 							</div>
 						</div>
 
@@ -101,7 +98,6 @@
 									/>
 								</div>
 								<h4 class="mb-2 text-lg font-semibold text-white">Tailwind CSS</h4>
-								<p class="text-center text-sm text-slate-400">Framework CSS utility-first</p>
 							</div>
 						</div>
 
@@ -118,7 +114,6 @@
 									/>
 								</div>
 								<h4 class="mb-2 text-lg font-semibold text-white">TypeScript</h4>
-								<p class="text-center text-sm text-slate-400">JavaScript con tipado estático</p>
 							</div>
 						</div>
 					</div>

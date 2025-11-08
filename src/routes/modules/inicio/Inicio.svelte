@@ -52,7 +52,7 @@ style="transform: translateY({scrollY * 0.5}px);"
             
             <!-- Descripción -->
             <p class="text-slate-400 text-base md:text-lg leading-relaxed mb-10 text-center max-w-md mx-auto">
-                Especializado en crear experiencias web modernas con tecnologías de vanguardia y diseño centrado en el usuario.
+                Empezando a crear experiencias web modernas con tecnologías modernas como Svelte, TypeScript... y diseño centrado en el usuario con TailwindCSS.
             </p>
             
             <!-- Social Links -->
