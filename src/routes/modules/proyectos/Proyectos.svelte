@@ -39,18 +39,34 @@
                         <!-- Project Image -->
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil y tablet siempre mostrar GIF -->
-                            <img
-                                src="/gif/airsoft-preview.gif"
+                            <video
+                                src="videos/airsoftpreview.mp4"
+                                autoplay
+                                muted
+                                loop
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
-                                alt="Vista previa del proyecto Airsoft Atlántico"
-                            />
+                            ></video>
                             
                             <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
-                            <img
-                                src={showGif ? '/gif/airsoft-preview.gif' : '/images/logo.png'}
-                                class="h-full w-full {showGif ? 'object-cover' : 'object-contain'} transition-all duration-300 hidden md:block"
-                                alt="Vista previa del proyecto Airsoft Atlántico"
-                            />
+                             {#if showGif}
+                                <video
+                                    src='videos/airsoftpreview.mp4'
+                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"
+                                    autoplay
+                                    muted
+                                    loop
+                                    >
+                                    <track kind="captions" label="Spanish captions" src="" srclang="es" default>
+                                </video>
+                            {:else}
+                                <img
+                                    src="images/logo.png"
+                                    class="h-full w-full object-contain transition-all duration-300 hidden md:block"
+                                    alt="Vista previa del proyecto Airsoft Atlántico"
+                                />
+                                
+                             {/if}
+                             
                         </div>
                         
                         <!-- Project Info -->
@@ -117,13 +133,35 @@
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-yellow-500/50">
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil y tablet siempre mostrar GIF -->
-                            <img
-                                src="/gif/historiatelopreview.gif"
+                            <video
+                                src="videos/historiatelopreview.mp4"
+                                autoplay
+                                muted
+                                loop
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
-                                alt="Vista previa del proyecto Historiatelo"
-                            />
+                            ></video>
                             
                             <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
+                             {#if showGifHistoriatelo}
+                                <video
+                                    src='videos/historiatelopreview.mp4'
+                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"
+                                    autoplay
+                                    muted
+                                    loop
+                                    >
+                                    <track kind="captions" label="Spanish captions" src="" srclang="es" default>
+                                </video>
+                                
+                                
+                             {:else}
+                                <img
+                                    src="/images/historiatelo.png"
+                                    class="h-full w-full object-contain transition-all duration-300 hidden md:block"
+                                    alt="Vista previa del proyecto Historiatelo"
+                                />
+                             {/if}
+                             
                             <img
                                 src={showGifHistoriatelo ? '/gif/historiatelopreview.gif' : '/images/historiatelo.png'}
                                 class="h-full w-full {showGifHistoriatelo ? 'object-cover' : 'object-contain'} transition-all duration-300 hidden md:block"
