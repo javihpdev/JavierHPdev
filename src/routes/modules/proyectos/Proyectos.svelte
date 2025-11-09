@@ -31,7 +31,7 @@
 		// Si autoplay está bloqueado, reintentar en el primer touch (una sola vez)
 		const onFirstTouch = () => {
 			tryPlayAll();
-			window.removeEventListener('touchstart', onFirstTouch, { passive: true });
+			window.removeEventListener('touchstart', onFirstTouch);
 		};
 		window.addEventListener('touchstart', onFirstTouch, { passive: true });
 
@@ -103,8 +103,7 @@
 								loop
 								playsinline
 								preload="metadata"
-								poster="/images/logo.png"
-								class="block h-full w-full object-cover transition-all duration-300 md:hidden"
+								class="hidden h-full w-full object-cover transition-all duration-300 md:flex"
 							/>
 							{:else}
 								<img
@@ -226,16 +225,7 @@
 									alt="Vista previa del proyecto Historiatelo"
 								/>
 							{/if}
-
-							<img
-								src={showGifHistoriatelo
-									? '/gif/historiatelopreview.gif'
-									: '/images/historiatelo.png'}
-								class="h-full w-full {showGifHistoriatelo
-									? 'object-cover'
-									: 'object-contain'} hidden transition-all duration-300 md:block"
-								alt="Vista previa del proyecto Historiatelo"
-							/>
+                            
 						</div>
 
 						<div class="space-y-4">
