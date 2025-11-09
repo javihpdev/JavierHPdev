@@ -40,22 +40,18 @@
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil: mostrar GIF (siempre funciona) -->
                             <img
-                                src="/gif/airsoft-preview.gif"
+                                src="/gif/airsoft-preview.webp"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa del proyecto Airsoft Atlántico"
                             />
                             
                             <!-- En desktop: imagen estática, video en hover -->
                             {#if showGif}
-                                <video
-                                    src="/videos/airsoftpreview.mp4"
-                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"
-                                    autoplay
-                                    muted
-                                    loop
-                                >
-                                    <track kind="captions" />
-                                </video>
+                                <img
+                                    src="/gif/airsoft-preview.webp"
+                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"                                 
+                                    alt="Vista previa del proyecto Airsoft Atlántico"
+                                />
                             {:else}
                                 <img
                                     src="/images/logo.png"
@@ -130,22 +126,19 @@
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil: GIF -->
                             <img
-                                src="/gif/historiatelopreview.gif"
+                                src="/gif/historiatelo-preview.webp"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa Historiatelo"
                             />
                             
                             <!-- En desktop: imagen/video hover -->
                              {#if showGifHistoriatelo}
-                                <video
-                                    src="/videos/historiatelopreview.mp4"
+                                <img
+                                    src="/gif/historiatelo-preview.webp"
                                     class="h-full w-full object-cover transition-all duration-300 hidden md:block"
-                                    autoplay
-                                    muted
-                                    loop
-                                >
-                                    <track kind="captions" />
-                                </video>
+                                    alt="Vista previa Historiatelo"
+                                />
+                                   
                             {:else}
                                 <img
                                     src="/images/historiatelo.png"
