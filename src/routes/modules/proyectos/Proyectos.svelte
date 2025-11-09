@@ -40,7 +40,7 @@
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil: mostrar GIF (siempre funciona) -->
                             <img
-                                src="/gif/airsoft-preview.webp"
+                                src="/gif/airsoft-preview.gif"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa del proyecto Airsoft Atlántico"
                             />
@@ -48,7 +48,7 @@
                             <!-- En desktop: imagen estática, video en hover -->
                             {#if showGif}
                                 <img
-                                    src="/gif/airsoft-preview.webp"
+                                    src="/gif/airsoft-preview.gif"
                                     class="h-full w-full object-cover transition-all duration-300 hidden md:block"                                 
                                     alt="Vista previa del proyecto Airsoft Atlántico"
                                 />
@@ -126,7 +126,7 @@
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
                             <!-- En móvil: GIF -->
                             <img
-                                src="/gif/historiatelo-preview.webp"
+                                src="/gif/historiatelo-preview.gif"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
                                 alt="Vista previa Historiatelo"
                             />
@@ -134,7 +134,7 @@
                             <!-- En desktop: imagen/video hover -->
                              {#if showGifHistoriatelo}
                                 <img
-                                    src="/gif/historiatelo-preview.webp"
+                                    src="/gif/historiatelo-preview.gif"
                                     class="h-full w-full object-cover transition-all duration-300 hidden md:block"
                                     alt="Vista previa Historiatelo"
                                 />
