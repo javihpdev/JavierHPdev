@@ -38,35 +38,27 @@
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-blue-500/50">
                         <!-- Project Image -->
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
-                            <!-- En móvil y tablet siempre mostrar GIF -->
-                            <video
-                                src="videos/airsoftpreview.mp4"
-                                autoplay
-                                muted
-                                loop
+                            <!-- En móvil: mostrar GIF (siempre funciona) -->
+                            <img
+                                src="/gif/airsoft-preview.gif"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
-                            ></video>
+                                alt="Vista previa del proyecto Airsoft Atlántico"
+                            />
                             
-                            <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
-                             {#if showGif}
-                                <video
-                                    src='videos/airsoftpreview.mp4'
-                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"
-                                    autoplay
-                                    muted
-                                    loop
-                                    >
-                                    <track kind="captions" label="Spanish captions" src="" srclang="es" default>
-                                </video>
+                            <!-- En desktop: imagen estática, video en hover -->
+                            {#if showGif}
+                                <img
+                                    src="/gif/airsoft-preview.gif"
+                                    class="h-full w-full object-cover transition-all duration-300 hidden md:block"                                 
+                                    alt="Vista previa del proyecto Airsoft Atlántico"
+                                />
                             {:else}
                                 <img
-                                    src="images/logo.png"
+                                    src="/images/logo.png"
                                     class="h-full w-full object-contain transition-all duration-300 hidden md:block"
                                     alt="Vista previa del proyecto Airsoft Atlántico"
                                 />
-                                
-                             {/if}
-                             
+                            {/if}
                         </div>
                         
                         <!-- Project Info -->
@@ -132,41 +124,28 @@
                 >
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-yellow-500/50">
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">
-                            <!-- En móvil y tablet siempre mostrar GIF -->
-                            <video
-                                src="videos/historiatelopreview.mp4"
-                                autoplay
-                                muted
-                                loop
+                            <!-- En móvil: GIF -->
+                            <img
+                                src="/gif/historiatelo-preview.gif"
                                 class="h-full w-full object-cover transition-all duration-300 block md:hidden"
-                            ></video>
+                                alt="Vista previa Historiatelo"
+                            />
                             
-                            <!-- En desktop mostrar imagen estática por defecto y GIF en hover -->
+                            <!-- En desktop: imagen/video hover -->
                              {#if showGifHistoriatelo}
-                                <video
-                                    src='videos/historiatelopreview.mp4'
+                                <img
+                                    src="/gif/historiatelo-preview.gif"
                                     class="h-full w-full object-cover transition-all duration-300 hidden md:block"
-                                    autoplay
-                                    muted
-                                    loop
-                                    >
-                                    <track kind="captions" label="Spanish captions" src="" srclang="es" default>
-                                </video>
-                                
-                                
-                             {:else}
+                                    alt="Vista previa Historiatelo"
+                                />
+                                   
+                            {:else}
                                 <img
                                     src="/images/historiatelo.png"
                                     class="h-full w-full object-contain transition-all duration-300 hidden md:block"
-                                    alt="Vista previa del proyecto Historiatelo"
+                                    alt="Vista previa Historiatelo"
                                 />
-                             {/if}
-                             
-                            <img
-                                src={showGifHistoriatelo ? '/gif/historiatelopreview.gif' : '/images/historiatelo.png'}
-                                class="h-full w-full {showGifHistoriatelo ? 'object-cover' : 'object-contain'} transition-all duration-300 hidden md:block"
-                                alt="Vista previa del proyecto Historiatelo"
-                            />
+                            {/if}
                         </div>
                         
                         <div class="space-y-4">
