@@ -24,14 +24,8 @@
             <span class="hidden md:inline text-slate-600 font-light">|</span>
             <span class="text-slate-400 text-base">Redes Sociales:</span>
             <div class="flex items-center gap-3">
-                <a href="https://github.com/javihpdev" target="_blank" aria-label="GitHub"
-                    class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-slate-700 hover:scale-110 transition-all duration-500">
                     <GitHub class="w-6 h-6 text-white" />
-                </a>
-                <a href="https://www.linkedin.com/in/javihdezperez" target="_blank" aria-label="LinkedIn"
-                    class="mx-1 p-2 rounded-full bg-slate-800 hover:bg-blue-700 hover:scale-110 transition-all duration-500">
                     <LinkedIn class="w-6 h-6 text-white" />
-                </a> 
             </div>
         </div>
     </div>
