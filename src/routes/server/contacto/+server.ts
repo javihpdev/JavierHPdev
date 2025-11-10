@@ -18,7 +18,7 @@ export const POST: RequestHandler = async ({ request }) => {
         port: parseInt(EMAIL_PORT),
         secure: false,
         auth: {
-            user: ,
+            user: EMAIL_FROM,
             pass: EMAIL_PASS
         }
        });
