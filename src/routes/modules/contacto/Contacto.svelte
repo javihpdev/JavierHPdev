@@ -18,6 +18,9 @@
 	let enviando = $state(false);
 	let mensajeExito = $state(false);
 	let mensajeError = $state(false);
+
+
+	
 </script>
 
 <div id="contacto" class="relative min-h-screen w-full bg-gray-900 py-20">

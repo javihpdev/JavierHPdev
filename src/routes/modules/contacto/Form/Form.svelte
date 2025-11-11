@@ -1,8 +1,7 @@
 <script lang="ts">
-	import Button from "$lib/components/web/Button.svelte";
-	import Input from "$lib/components/web/Input.svelte";
-	import TextArea from "$lib/components/web/TextArea.svelte";
-   
+    import Button from "$lib/components/web/Button.svelte";
+    import Input from "$lib/components/web/Input.svelte";
+    import TextArea from "$lib/components/web/TextArea.svelte";
 
     type Props = {
         nombre: string;
@@ -14,6 +13,7 @@
         mensajeExito: boolean;
         mensajeError: boolean;
     };
+    
     let {
         nombre = $bindable(""),
         telefono = $bindable(""),
@@ -22,16 +22,27 @@
         mensaje = $bindable(""),
         enviando = $bindable(false),
         mensajeExito = $bindable(false),
-        mensajeError = $bindable(false)
-    }: Props = $props();    
+        mensajeError = $bindable(false),
+    }: Props = $props();   
 
-    // Funcion que envia el formulario de contacto
+	 function validarEmail(email: string): boolean {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+	
+    // Function to handle form 
 	async function contacto(e: Event) {
 		// Este event evita que se recargue la pagina al enviar el formulario y que salga la URL con los parametros en la barra de direcciones del navegador
 		e.preventDefault();
+		
 		// Validar campos requeridos
 		if (!nombre || !email || !mensaje || !asunto) {
 			alert('Por favor completa todos los campos obligatorios');
+			return;
+		}
+
+		if (!validarEmail(email)) {
+			alert('Por favor ingresa un correo electrónico válido');
 			return;
 		}
 
@@ -56,7 +67,7 @@
 
 			if (response.ok && result.success) {
 				mensajeExito = true;
-				// Limpiar formulario
+				// Clear form fields
 				nombre = '';
 				telefono = '';
 				email = '';
@@ -64,19 +75,21 @@
 				mensaje = '';
 			} else {
 				mensajeError = true;
+				console.error('Error al enviar el mensaje:', result.error);
 			}
+			
 		} catch (error) {
 			console.error('Error:', error);
-			alert('Error de conexión. Intenta nuevamente.');
+			mensajeError = true;
 		} finally {
 			enviando = false;
 		}
 	}
 
 </script>
-<!-- Sección Contacto -->
+<!-- Contact Section -->
 			<div class="relative">
-				<!-- Decoracion shadow para el formulario -->
+				<!-- Background decoration to Form, blur -->
 				<div
 					class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 opacity-20 blur"
 				></div>
@@ -91,7 +104,7 @@
 
 					<form class="space-y-6" onsubmit={contacto}>
 						<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-							<!-- Nombre -->
+							<!--  Name -->
 							<div class="space-y-2">
 								<label for="nombre" class="block text-sm font-medium text-slate-300">
 									Nombre <span class="text-red-500">*</span>
@@ -105,7 +118,7 @@
 								/>
 							</div>
 
-							<!-- Teléfono -->
+							<!-- Phone -->
 							<div class="space-y-2">
 								<label for="telefono" class="block text-sm font-medium text-slate-300">
 									Teléfono <span class="text-slate-400 italic">(opcional)</span>
@@ -123,17 +136,18 @@
 						<div class="space-y-2">
 							<label for="email" class="block text-sm font-medium text-slate-300">
 								Email <span class="text-red-500">*</span>
+								
 							</label>
 							<Input
 								type="email"
 								placeholder="tu@email.com"
 								bind:value={email}
 								required
-								class="w-full rounded-xl border border-slate-600 bg-slate-700/50 px-4 py-3 text-white placeholder-slate-400 transition-colors focus:border-blue-500 focus:ring-0 focus:outline-none"
+								class="w-full rounded-xl border bg-slate-700/50 px-4 py-3 text-white placeholder-slate-400 transition-colors focus:border-blue-500 focus:ring-0 focus:outline-none"
 							/>
 						</div>
 
-						<!-- Asunto -->
+						<!-- Subject -->
 						<div class="space-y-2">
 							<label for="asunto" class="block text-sm font-medium text-slate-300">
 								Asunto <span class="text-red-500">*</span>
@@ -146,7 +160,7 @@
 								class="w-full rounded-xl border border-slate-600 bg-slate-700/50 px-4 py-3 text-white placeholder-slate-400 transition-colors focus:border-blue-500 focus:ring-0 focus:outline-none"
 							/>
 						</div>
-						<!-- Mensaje -->
+						<!-- Message -->
 						<div class="space-y-2">
 							<label for="mensaje" class="block text-sm font-medium text-slate-300">
 								Mensaje <span class="text-red-500">*</span>

@@ -38,12 +38,8 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 			<div
 				class="overflow-hidden rounded-3xl border border-slate-700 bg-slate-800/50 p-8 shadow-2xl backdrop-blur-sm md:p-12"
 			>
-				<!-- Decoracion de fondo -->
-				<div
-					class="absolute top-0 right-0 h-32 w-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 blur-3xl"
-				></div>
 
-				<!-- Estudios Informacion -->
+				<!-- Study information -->
 				<InfoEstudios/>
 
 				<!-- Technologies Grid -->

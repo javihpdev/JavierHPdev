@@ -55,6 +55,32 @@
 					<p class="text-center text-slate-400">
 						Te llegará un correo electrónico de confirmación.
 					</p>
+					<div class="mt-2 rounded-xl bg-yellow-500/10 border border-yellow-500/30 p-4 w-full">
+            <div class="flex items-start gap-3">
+				<!-- Imagen de advertencia -->
+                <svg 
+                    class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                >
+                    <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        stroke-width="2" 
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    />
+                </svg>
+				<!-- Cuadro de advertencia -->
+                <div class="text-sm text-yellow-200/90">
+                    <p class="font-semibold mb-1">Si no recibes el correo:</p>
+                    <ul class="space-y-1 text-yellow-200/70">
+                        <li>• Revisa la carpeta de <span class="font-semibold text-yellow-200">spam</span></li>
+                        <li>• Comprueba que el <span class="font-semibold text-yellow-200">email</span> escrito sea el correcto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 					<Button
 						type="button"
 						text="Cerrar"

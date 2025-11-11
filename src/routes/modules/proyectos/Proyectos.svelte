@@ -19,6 +19,7 @@
             <h1 class="text-5xl md:text-6xl p-3 font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
                 Mis Proyectos
             </h1>
+            <!-- Linea decorativa -->
             <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
             <p class="text-xl text-slate-400 mt-6 max-w-3xl mx-auto">
                 Una selección de proyectos que demuestran mis habilidades en desarrollo web moderno y mi pasión por crear experiencias digitales.
@@ -27,23 +28,23 @@
 
         <!-- Projects Grid -->
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
-            <!-- Proyecto 1: Airsoft Atlántico -->
+            <!-- Project 1: Airsoft Atlántico -->
            <AirsoftAtlantico 
                 showGif={showGif}
               />
 
-            <!-- Proyecto 2: Historiatelo -->
+            <!-- Project 2: Historiatelo -->
             <Historiatelo 
                 showGifHistoriatelo={showGifHistoriatelo}
             />
 
-            <!-- Proyecto 3: GePro -->
+            <!-- Project 3: GePro -->
             <GePro 
                 showGifGepro={showGifGepro}
             />
         </div>
 
-        <!-- GitHub CTA Section -->
+        <!-- GitHub Button or Contact Button -->
         <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-3xl p-8 md:p-12 text-center">
             <div class="max-w-3xl mx-auto">
                 <h3 class="text-3xl font-bold text-white mb-4">¿Quieres ver más?</h3>

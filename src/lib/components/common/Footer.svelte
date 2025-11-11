@@ -30,6 +30,6 @@
         </div>
     </div>
     <div class="text-xs text-slate-500 mt-4 text-center leading-relaxed">
-        Desarrollado con <a href="https://svelte.dev/" target="_blank" class="text-blue-400 font-semibold underline italic">Svelte</a> &copy; Todos los derechos reservados.
+        Proyecto desarrollado con <a href="https://svelte.dev/" target="_blank" class="text-blue-400 font-semibold underline italic">Svelte</a> &copy; Todos los derechos reservados.
     </div>
 </footer>

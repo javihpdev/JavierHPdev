@@ -2,7 +2,7 @@
     import Contacto from "../contacto/Contacto.svelte";
     import { onMount } from 'svelte';
     import Proyectos from "../proyectos/Proyectos.svelte";
-    import NavBar from "$lib/components/common/NavBar.svelte";
+    import NavBar from "$lib/components/common/NavBar/NavBar.svelte";
     import Estudios from "../estudios/Estudios.svelte";
     import Experiencia from "../experiencia/Experiencia.svelte";
 	import GitHub from "$lib/components/common/icons/GitHub.svelte";

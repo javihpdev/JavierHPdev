@@ -1,18 +1,50 @@
 import { json, type RequestHandler } from "@sveltejs/kit";
 import { EMAIL_FROM, EMAIL_HOST, EMAIL_PASS, EMAIL_PORT } from "$env/static/private";
 import { createTransport } from "nodemailer";
+import { promisify } from "util";
+import dns from "dns";
 
+const resolveMx = promisify(dns.resolveMx);
 
+async function verificarDominioEmail(email: string): Promise<boolean> {
+    try {
+        const domain = email.split('@')[1];
+        const addresses = await resolveMx(domain);
+        return addresses && addresses.length > 0;
+    } catch (error) {
+        return false;
+    }
+}
 
 export const POST: RequestHandler = async ({ request }) => {
-   try{
-
+   try {
        const { nombre, telefono, email, asunto, mensaje } = await request.json();
 
        if (!nombre || !email || !mensaje || !asunto) {
-        return new Response(JSON.stringify({ error: "Faltan campos obligatorios" }), { status: 400 });
+           return json({ 
+               success: false, 
+               error: "Faltan campos obligatorios" 
+           }, { status: 400 });
        }
 
+        // Verificar formato del email
+       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       if (!emailRegex.test(email)) {
+           return json({ 
+               success: false, 
+               error: "El formato del correo electrónico no es válido" 
+           }, { status: 400 });
+       }
+
+       // Verificar que el dominio del email exista
+       const dominioValido = await verificarDominioEmail(email);
+       if (!dominioValido) {
+           return json({ 
+               success: false, 
+               error: "El dominio del correo electrónico no existe" 
+           }, { status: 400 });
+       }
+    
        const transporter = await createTransport({
         host: EMAIL_HOST,
         port: parseInt(EMAIL_PORT),
@@ -73,9 +105,11 @@ const confirmOptions = {
 
        return json({ success: true, message: "Correo enviado exitosamente" });
 
-    } catch (error) {
-        console.error("Error al enviar el correo:", error);
-        return json ({success: false, message: "Ha ocurrido un error al enviar el correo" }, {status: 500});
-     }
-     
+   } catch (error) {
+       console.error("Error al enviar el correo:", error);
+       return json({ 
+           success: false, 
+           error: "Ha ocurrido un error al enviar el correo" 
+       }, { status: 500 });
+   }
 }
