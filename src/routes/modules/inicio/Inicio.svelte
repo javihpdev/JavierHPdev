@@ -33,7 +33,7 @@
 </script>
 
 
-<!-- Hero Section con efecto parallax -->
+<!-- Hero Section con efecto paralla -->
 <div 
 class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-950 via-gray-900 to-gray-900   relative"
 style="transform: translateY({scrollY * 0.5}px);"
