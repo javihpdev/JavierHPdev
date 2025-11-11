@@ -26,7 +26,9 @@
     }: Props = $props();    
 
     // Funcion que envia el formulario de contacto
-	async function contacto() {
+	async function contacto(e: Event) {
+		// Este event evita que se recargue la pagina al enviar el formulario y que salga la URL con los parametros en la barra de direcciones del navegador
+		e.preventDefault();
 		// Validar campos requeridos
 		if (!nombre || !email || !mensaje || !asunto) {
 			alert('Por favor completa todos los campos obligatorios');
@@ -87,7 +89,7 @@
 						<p class="text-slate-400">Me pondré en contacto contigo lo más pronto posible.</p>
 					</div>
 
-					<form class="space-y-6">
+					<form class="space-y-6" onsubmit={contacto}>
 						<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 							<!-- Nombre -->
 							<div class="space-y-2">
@@ -161,7 +163,6 @@
 							<Button
 								type="submit"
 								text={enviando ? 'Enviando mensaje...' : 'Enviar Mensaje'}
-								onclick={contacto}
 								disabled={enviando}
 								class="w-full transform rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:from-blue-600 hover:to-purple-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50"
 							/>

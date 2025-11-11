@@ -51,13 +51,14 @@ type Props = {
 							fill="none"
 						/>
 					</svg>
-					<p class="text-3xl tracking-wide text-white md:text-4xl">
+					<p class="text-3xl tracking-wide text-white text-center md:text-4xl">
 						¡No se ha podido Enviar el Mensaje!
 					</p>
 					<p class="text-center text-slate-400">Gracias por ponerte en contacto conmigo.</p>
 					<p class="text-center text-slate-400">
-						Pero ha habido un problema al enviarlo. Inténtalo de nuevo.
+						Pero ha habido un problema al enviar el mensaje.
 					</p>
+					<p class="text-center text-slate-400">Inténtalo de nuevo.</p>
 					<Button
 						type="button"
 						text="Cerrar"

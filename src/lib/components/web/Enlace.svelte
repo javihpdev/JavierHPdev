@@ -5,14 +5,28 @@
 
     type Props = {
         class?: string;
-        href?: string;
+        targetId?: string;
         ariaLabel?: string;
         children?: Snippet;
 
     }
 
-    let { class: addClass="", href="", ariaLabel="", children } : Props = $props();
+    let { class: addClass="", targetId="", ariaLabel="", children } : Props = $props();
+// Funcion para quitar el reload al hacer click en un enlace interno
+    function handleClick(e: MouseEvent) {
+        e.preventDefault();
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
 
 </script>
-
-<a aria-label={ariaLabel} {href} class="{addClass}">{@render children?.()}</a>
+<button 
+    aria-label={ariaLabel} 
+    class="cursor-pointer {addClass}"
+    onclick={handleClick}
+    type="button"
+>
+    {@render children?.()}
+</button>

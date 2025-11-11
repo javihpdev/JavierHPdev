@@ -14,6 +14,7 @@
     function closeMenu() {
         isOpen = false;
     }
+
 </script>
 
 <nav class="flex flex-col lg:flex-row w-full max-w-full justify-center py-5 bg-transparent items-center gap-5  {addClass}">
@@ -22,11 +23,11 @@
     </div>
 
         <div class=" gap-10 text-white font-semibold text-sm lg:flex w-full max-w-full hidden">
-          <Enlace href="#inicio" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">INICIO</Enlace>
-          <Enlace href="#proyectos" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">PROYECTOS</Enlace>
-            <Enlace href="#experiencia" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">EXPERIENCIA</Enlace>
-            <Enlace href="#estudios" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">ESTUDIOS</Enlace>
-            <Enlace href="#contacto" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">CONTACTO</Enlace>
+          <Enlace targetId="inicio" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">INICIO</Enlace>
+          <Enlace targetId="proyectos" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">PROYECTOS</Enlace>
+            <Enlace targetId="experiencia" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">EXPERIENCIA</Enlace>
+            <Enlace targetId="estudios" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">ESTUDIOS</Enlace>
+            <Enlace targetId="contacto" class="flex tracking-[5px] hover:text-gray-600 transition-colors duration-500">CONTACTO</Enlace>
         </div>
 
             <!-- NOTE: Poner el menu hamburguesa para el movil -->
@@ -46,19 +47,19 @@
       <div class={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}>
       <div class="flex flex-col lg:hidden items-center gap-5 text-white p-4 text-lg font-bold ">
               <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="/">Inicio</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" targetId="inicio">Inicio</Enlace>
             </button>
             <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#proyectos">Proyectos</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" targetId="proyectos">Proyectos</Enlace>
             </button>
             <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#experiencia">Experiencia</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" targetId="experiencia">Experiencia</Enlace>
             </button>
             <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#estudios">Estudios</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" targetId="estudios">Estudios</Enlace>
             </button>
             <button onclick={closeMenu}>
-              <Enlace class="hover:text-gray-600 transition-colors duration-500" href="#contacto">Contacto</Enlace>
+              <Enlace class="hover:text-gray-600 transition-colors duration-500" targetId="contacto">Contacto</Enlace>
             </button>
       </div>
       </div>
