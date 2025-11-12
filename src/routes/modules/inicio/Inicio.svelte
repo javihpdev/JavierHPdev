@@ -35,7 +35,7 @@
 
 <!-- Hero Section con efecto parallax -->
 <div 
-class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-950 via-gray-900 to-gray-900   relative"
+class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-900 via-gray-800 to-gray-800   relative"
 style="transform: translateY({scrollY * 0.5}px);"
 >
 <NavBar class="fixed top-0 left-0 right-0 z-50 bg-gray-800/80 backdrop-blur-sm" />
@@ -65,7 +65,7 @@ style="transform: translateY({scrollY * 0.5}px);"
 </section>
 
 <!-- Sección de footer -->
-<section class="relative z-10">
+<section class="relative z-9">
     <Footer />
 </section>
 

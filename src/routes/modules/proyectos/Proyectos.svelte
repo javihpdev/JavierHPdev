@@ -11,7 +11,7 @@
 
 <div 
     id="proyectos"
-    class="min-h-screen w-full bg-gradient-to-br from-slate-950 via-gray-900 to-gray-900 py-20"
+    class="min-h-screen w-full bg-gray-800 py-20"
 >
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Header Section -->
@@ -45,6 +45,7 @@
         </div>
 
         <!-- GitHub Button or Contact Button -->
+
         <div class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-3xl p-8 md:p-12 text-center">
             <div class="max-w-3xl mx-auto">
                 <h3 class="text-3xl font-bold text-white mb-4">¿Quieres ver más?</h3>

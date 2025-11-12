@@ -17,7 +17,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 	let { class: addClass = '' }: Props = $props();
 </script>
 
-<div id="estudios" class="min-h-screen w-full bg-gray-900 py-20">
+<div id="estudios" class="min-h-screen w-full bg-gray-800 py-20">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<!-- Header Section -->
 		<div class="mb-16 text-center">

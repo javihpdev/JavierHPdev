@@ -10,7 +10,7 @@
     let { class: addClass="" } : Props = $props();
 </script>
 
-<footer class="w-full bg-gradient-to-br from-gray-900 via-gray-900 to-slate-950 py-8 px-4 flex flex-col justify-center items-center gap-2 {addClass}">
+<footer class="w-full bg-gradient-to-br from-gray-800 via-gray-800 to-slate-900 py-8 px-4 flex flex-col justify-center items-center gap-2 {addClass}">
     <div class="flex flex-col md:flex-row justify-center items-center w-full gap-2 md:gap-8">
         <div class="flex items-center gap-2">
             <Copyright class="w-5 h-5 text-blue-400" />

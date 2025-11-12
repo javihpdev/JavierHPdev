@@ -23,7 +23,7 @@
 	
 </script>
 
-<div id="contacto" class="relative min-h-screen w-full bg-gray-900 py-20">
+<div id="contacto" class="relative min-h-screen w-full bg-gray-800 py-20">
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<!-- Header Section -->
 		<div class="mb-16 text-center">
