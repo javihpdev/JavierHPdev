@@ -10,7 +10,7 @@
 							Desarrollo de Aplicaciones Web
 						</h2>
 						<p class="mb-2 text-xl font-medium text-purple-400">LinkiaFP</p>
-						<p class="text-slate-400">2023 - 2025</p>
+						<p class="text-slate-400">Sep 2023 - Jun 2025</p>
 					</div>
 
 					<!-- Institution Logo -->

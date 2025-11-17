@@ -9,7 +9,7 @@
 					<div class="mb-6 text-center md:mb-0 md:text-left">
 						<h2 class="mb-2 text-3xl font-bold text-white">TipoMedia</h2>
 						<p class="text-xl font-medium text-blue-400">Full Stack Developer</p>
-						<p class="mt-2 text-slate-400">ene 2025 - Presente</p>
+						<p class="mt-2 text-slate-400">Ene 2025 - Nov 2025</p>
 					</div>
 
 					<!-- Company Logo -->
