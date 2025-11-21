@@ -1,16 +1,12 @@
 <script lang="ts">
-    import Contacto from "../contacto/Contacto.svelte";
+    import Contacto from "../../../lib/components/home/contacto/Contacto.svelte";
     import { onMount } from 'svelte';
-    import Proyectos from "../proyectos/Proyectos.svelte";
+    import Proyectos from "../../../lib/components/home/proyectos/Proyectos.svelte";
     import NavBar from "$lib/components/common/NavBar/NavBar.svelte";
-    import Estudios from "../estudios/Estudios.svelte";
-    import Experiencia from "../experiencia/Experiencia.svelte";
-	import GitHub from "$lib/components/common/icons/GitHub.svelte";
-	import LinkedIn from "$lib/components/common/icons/LinkedIn.svelte";
+    import Estudios from "../../../lib/components/home/estudios/Estudios.svelte";
+    import Experiencia from "../../../lib/components/home/experiencia/Experiencia.svelte";
 	import Footer from "$lib/components/common/Footer.svelte";
-	import SocialMedia from "$lib/components/common/SocialMedia/SocialMedia.svelte";
-	import Home from "../home/Home.svelte";
-
+    import Home from "$lib/components/home/Home.svelte";
     type Props = {
         class?: string;
     }
@@ -41,7 +37,6 @@ style="transform: translateY({scrollY * 0.5}px);"
 <NavBar class="fixed top-0 left-0 right-0 z-50 bg-gray-800/80 backdrop-blur-sm" />
 
 <Home />
-    
 </div>
 
 <!-- Sección de Proyectos -->
