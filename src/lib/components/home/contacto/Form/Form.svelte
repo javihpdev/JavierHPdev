@@ -183,10 +183,9 @@
 						</div>
 
 						<!-- Form Footer -->
-						<div class="pt-4 text-center">
-							<p class="text-sm text-slate-400">
-								* Campos obligatorios. Tus datos están seguros conmigo.
-							</p>
+						<div class="pt-4 flex gap-2 items-center justify-center text-center">
+								<span class="text-red-500">*</span>
+								 <p class="text-sm text-slate-400">Campos obligatorios. Tus datos están seguros conmigo.</p>
 						</div>
 					</form>
 				</div>

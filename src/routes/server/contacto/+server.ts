@@ -96,7 +96,7 @@ const confirmOptions = {
             Saludos cordiales,<br>
             <strong style="color:#fff;">Javier Hernández Pérez</strong><br>
             <span style="font-size:0.9rem;">Desarrollador Full Stack</span>
-        </p>
+        </p> 
     </div>
     `
 };
