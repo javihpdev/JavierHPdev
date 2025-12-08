@@ -1,4 +1,29 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
+
+    function handleContactClick(e: MouseEvent) {
+        e.preventDefault();
+        goto('/#contacto').then(() => {
+            setTimeout(() => {
+                const element = document.getElementById('contacto');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    }
+
+    function handleProyectosClick(e: MouseEvent) {
+        e.preventDefault();
+        goto('/#proyectos').then(() => {
+            setTimeout(() => {
+                const element = document.getElementById('proyectos');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    }
 </script>
 
 <div class="relative w-full min-h-screen bg-gradient-to-br from-[#2D1B69] via-[#1e1642] to-[#0f0a24] flex flex-col items-center justify-center px-6">
@@ -100,22 +125,25 @@
         </div>
 
         <!-- CTA Button -->
-        <a 
-            href="/#proyectos"
+        <button
+            onclick={handleProyectosClick}
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#4ECDC4] to-[#FFB800] text-[#2D1B69] font-bold text-lg rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
         >
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
             Volver a Proyectos
-        </a>
+        </button>
 
         <!-- Footer Info -->
         <p class="mt-12 text-gray-500 text-sm">
             ¿Tienes alguna pregunta? 
-            <a href="/#contacto" class="text-[#4ECDC4] hover:text-[#FFB800] transition-colors underline">
+            <button 
+                onclick={handleContactClick}
+                class="text-[#4ECDC4] hover:text-[#FFB800] transition-colors underline cursor-pointer"
+            >
                 Contáctame
-            </a>
+            </button>
         </p>
     </div>
 </div>

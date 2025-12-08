@@ -72,7 +72,7 @@
                                 <span class="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-medium border border-cyan-500/30">
                                     TailwindCSS
                                 </span>
-								<span class="px-3 py-1 bg-[#C5F64F]/20 text-[#C5F64F] rounded-full text-sm font-medium border border-cyan-500/30">
+								<span class="px-3 py-1 bg-[#C5F64F]/20 text-[#C5F64F] rounded-full text-sm font-medium border border-[#C5F64F]">
                                     Drizzle ORM
                                 </span>
                             </div>
