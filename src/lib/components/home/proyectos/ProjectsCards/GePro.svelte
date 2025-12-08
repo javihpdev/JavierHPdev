@@ -13,7 +13,7 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a 
-                    href="proyectos/geprobeta" 
+                    href="modules/proyectos/gepro" 
                     onmouseenter={() => (showGifGepro = true)}
                     onmouseleave={() => (showGifGepro = false)}
                     class="relative block"
@@ -29,8 +29,11 @@
                         
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
-                                <h3 class="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
-                                    GePro
+                                <h3 class="text-2xl font-bold text-white justify-center text-center flex gap-2 group-hover:text-green-400 transition-colors">
+                                   <span>GePro</span>
+                                   <span class="px-2.5 text-center items-center flex bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-semibold border border-emerald-500/30">
+                                       TFG
+                                   </span>
                                 </h3>
                                 <div class="flex items-center text-slate-400 group-hover:text-green-400 transition-colors">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

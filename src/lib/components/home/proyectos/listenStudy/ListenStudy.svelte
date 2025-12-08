@@ -26,25 +26,25 @@
     }
 </script>
 
-<div class="relative w-full min-h-screen bg-gradient-to-br from-[#2D1B69] via-[#1e1642] to-[#0f0a24] flex flex-col items-center justify-center px-6">
+<div class="relative w-full h-screen bg-gradient-to-br from-[#2D1B69] via-[#1e1642] to-[#0f0a24] flex flex-col items-center justify-center px-4 py-6 overflow-hidden">
     <!-- Animated Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-20 left-10 w-72 h-72 bg-[#FFB800]/10 rounded-full blur-3xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-96 h-96 bg-[#4ECDC4]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div class="absolute top-10 left-10 w-48 h-48 bg-[#FFB800]/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-56 h-56 bg-[#4ECDC4]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
     </div>
 
     <!-- Main Content -->
-    <div class="relative z-10 max-w-4xl w-full text-center">
+    <div class="relative z-10 max-w-3xl w-full text-center">
         <!-- Logo -->
-        <div class="mb-12 flex justify-center">
-            <h1 class="text-6xl md:text-7xl font-bold">
+        <div class="mb-6 flex justify-center">
+            <h1 class="text-4xl md:text-5xl font-bold">
                 <span class="text-[#4ECDC4]">Listen</span><span class="text-[#FFB800]">Study</span>
             </h1>
         </div>
 
         <!-- Animated SVG - Headphones with Sound Waves -->
-        <div class="mb-12 flex justify-center">
-            <svg class="w-48 h-48 md:w-64 md:h-64" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="mb-6 flex justify-center">
+            <svg class="w-32 h-32 md:w-40 md:h-40" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Headphones -->
                 <path 
                     d="M60 80 Q60 40, 100 40 Q140 40, 140 80" 
@@ -76,67 +76,67 @@
         </div>
 
         <!-- Status Badge -->
-        <div class="inline-flex items-center px-6 py-3 bg-[#FFB800]/20 border border-[#FFB800]/30 rounded-full mb-8">
-            <span class="w-3 h-3 bg-[#FFB800] rounded-full mr-3 animate-ping"></span>
-            <span class="text-[#FFB800] font-semibold text-lg">En Desarrollo</span>
+        <div class="inline-flex items-center px-4 py-2 bg-[#FFB800]/20 border border-[#FFB800]/30 rounded-full mb-4">
+            <span class="w-2 h-2 bg-[#FFB800] rounded-full mr-2 animate-ping"></span>
+            <span class="text-[#FFB800] font-semibold text-sm">En Desarrollo</span>
         </div>
 
         <!-- Main Message -->
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
             Algo increíble está en camino
         </h2>
         
-        <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-base text-gray-300 mb-6 max-w-xl mx-auto leading-relaxed">
             Estamos trabajando en una plataforma revolucionaria para transformar tu experiencia de aprendizaje. 
             Pronto podrás disfrutar de <span class="text-[#4ECDC4] font-semibold">ListenStudy</span>.
         </p>
 
         <!-- Progress Indicators -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-                <div class="w-12 h-12 bg-[#4ECDC4]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-6 h-6 text-[#4ECDC4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                <div class="w-10 h-10 bg-[#4ECDC4]/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                    <svg class="w-5 h-5 text-[#4ECDC4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
                     </svg>
                 </div>
-                <h3 class="text-white font-semibold mb-2">Audio Interactivo</h3>
-                <p class="text-gray-400 text-sm">Contenido de audio optimizado</p>
+                <h3 class="text-white font-semibold text-sm mb-1">Audio Interactivo</h3>
+                <p class="text-gray-400 text-xs">Contenido de audio optimizado</p>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-                <div class="w-12 h-12 bg-[#FFB800]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-6 h-6 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                <div class="w-10 h-10 bg-[#FFB800]/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                    <svg class="w-5 h-5 text-[#FFB800]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                     </svg>
                 </div>
-                <h3 class="text-white font-semibold mb-2">Aprendizaje Adaptativo</h3>
-                <p class="text-gray-400 text-sm">Personalizado a tu ritmo</p>
+                <h3 class="text-white font-semibold text-sm mb-1">Aprendizaje Adaptativo</h3>
+                <p class="text-gray-400 text-xs">Personalizado a tu ritmo</p>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
-                <div class="w-12 h-12 bg-[#4ECDC4]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-6 h-6 text-[#4ECDC4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+                <div class="w-10 h-10 bg-[#4ECDC4]/20 rounded-lg flex items-center justify-center mx-auto mb-2">
+                    <svg class="w-5 h-5 text-[#4ECDC4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                 </div>
-                <h3 class="text-white font-semibold mb-2">Experiencia Fluida</h3>
-                <p class="text-gray-400 text-sm">Interfaz intuitiva y moderna</p>
+                <h3 class="text-white font-semibold text-sm mb-1">Experiencia Fluida</h3>
+                <p class="text-gray-400 text-xs">Interfaz intuitiva y moderna</p>
             </div>
         </div>
 
         <!-- CTA Button -->
         <button
             onclick={handleProyectosClick}
-            class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#4ECDC4] to-[#FFB800] text-[#2D1B69] font-bold text-lg rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
+            class="inline-flex items-center cursor-pointer px-6 py-3 bg-gradient-to-r from-[#4ECDC4] to-[#FFB800] text-[#2D1B69] font-bold text-base rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
         >
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
             </svg>
             Volver a Proyectos
         </button>
 
         <!-- Footer Info -->
-        <p class="mt-12 text-gray-500 text-sm">
+        <p class="mt-6 text-gray-500 text-xs">
             ¿Tienes alguna pregunta? 
             <button 
                 onclick={handleContactClick}
