@@ -3,10 +3,12 @@
     import AirsoftAtlantico from "./ProjectsCards/AirsoftAtlantico.svelte";
 	import GePro from "./ProjectsCards/GePro.svelte";
 	import Historiatelo from "./ProjectsCards/Historiatelo.svelte";
+	import ListenStudyCard from "./ProjectsCards/ListenStudyCard.svelte";
 
     let showGif = $state(false);
     let showGifHistoriatelo = $state(false);
     let showGifGepro = $state(false);
+    let showGifListenStudy = $state(false);
 </script>
 
 <div 
@@ -41,6 +43,11 @@
             <!-- Project 3: GePro -->
             <GePro 
                 showGifGepro={showGifGepro}
+            />
+
+            <!-- Project 4: ListenStudy -->
+            <ListenStudyCard 
+                showGifListenStudy={showGifListenStudy}
             />
         </div>
 

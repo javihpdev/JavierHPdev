@@ -13,7 +13,7 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 
                 <a 
-                    href="/modules/proyectos/geprobeta" 
+                    href="proyectos/geprobeta" 
                     onmouseenter={() => (showGifGepro = true)}
                     onmouseleave={() => (showGifGepro = false)}
                     class="relative block"
