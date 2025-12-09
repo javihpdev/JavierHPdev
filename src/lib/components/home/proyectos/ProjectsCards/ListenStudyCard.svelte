@@ -102,6 +102,11 @@
 						></span>
 						<span class="relative z-10">Google Cloud Text-to-Speech API</span>
 					</span>
+					<span
+						class="rounded-full border border-yellow-500 bg-yellow-700/20 px-3 py-1 text-sm font-medium text-yellow-500"
+					>
+						JWT (JSON Web Tokens)
+					</span>
 				</div>
 
 				<!-- Project Stats -->
