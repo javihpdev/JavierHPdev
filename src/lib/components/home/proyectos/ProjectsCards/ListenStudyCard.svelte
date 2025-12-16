@@ -94,6 +94,20 @@
 					>
 						Drizzle ORM
 					</span>
+					<span>
+						<span
+							class="rounded-full border border-red-500/30 bg-red-500/20 px-3 py-1 text-sm font-medium text-red-400"
+						>
+							PostGreSQL
+						</span>
+					</span>
+					<span>
+						<span
+							class="rounded-full border border-slate-500/30 bg-slate-500/20 px-3 py-1 text-sm font-medium text-slate-400"
+						>
+							Vercel
+						</span>
+					</span>
 					<span
 						class="relative overflow-hidden rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 bg-clip-padding px-3 py-1 text-sm font-medium text-white"
 					>
@@ -102,6 +116,7 @@
 						></span>
 						<span class="relative z-10">Google Cloud Text-to-Speech API</span>
 					</span>
+
 					<span
 						class="rounded-full border border-yellow-500 bg-yellow-700/20 px-3 py-1 text-sm font-medium text-yellow-500"
 					>
