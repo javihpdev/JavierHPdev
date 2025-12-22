@@ -1,24 +1,18 @@
 <script lang="ts">
 	type Props = {
 		showGifListenStudy?: boolean;
-		onmouseenter?: boolean;
-		onmouseleave?: boolean;
 	};
 	let { showGifListenStudy = $bindable(false) }: Props = $props();
 </script>
 
 <div class="group relative">
-	<!-- Background Decoration -->
-	<div
-		class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-yellow-500 via-cyan-500 to-green-600 opacity-25 blur transition duration-1000 group-hover:opacity-75 group-hover:duration-200"
-	></div>
-
 	<a
-		href="/modules/proyectos/listenstudy"
+		href="https://listen-study.vercel.app/"
+		target="_blank"
 		rel="noopener noreferrer"
 		onmouseenter={() => (showGifListenStudy = true)}
 		onmouseleave={() => (showGifListenStudy = false)}
-		class="relative block"
+		class="relative block shadow-md shadow-cyan-500/20 rounded-3xl"
 	>
 		<div
 			class="rounded-3xl border border-slate-700/50 bg-slate-800/80 p-8 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-cyan-500/50"
@@ -128,8 +122,8 @@
 				<div class="flex items-center justify-between border-t border-slate-700 pt-4">
 					<div class="flex items-center space-x-4 text-sm text-slate-400">
 						<span class="flex items-center">
-							<span class="mr-2 h-2 w-2 rounded-full bg-orange-500"></span>
-							En desarrollo
+							<span class="mr-2 h-2 w-2 rounded-full bg-green-500"></span>
+							Live
 						</span>
 						<span>2025</span>
 					</div>

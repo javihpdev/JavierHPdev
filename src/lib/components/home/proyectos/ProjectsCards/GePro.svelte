@@ -1,22 +1,17 @@
 <script lang="ts">
     type Props = {
-        class?: string;
         showGifGepro?: boolean;
     };
 
-    let { class: addClass = '', showGifGepro = $bindable(false) }: Props = $props();
-
+    let { showGifGepro = $bindable(false) }: Props = $props();
 </script>
 
-
 <div id="gepro" class="group relative">
-                <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                
                 <a 
                     href="modules/proyectos/gepro" 
                     onmouseenter={() => (showGifGepro = true)}
                     onmouseleave={() => (showGifGepro = false)}
-                    class="relative block"
+                    class="relative block shadow-md shadow-green-500/20 rounded-3xl"
                 >
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-green-500/50">
                         <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">

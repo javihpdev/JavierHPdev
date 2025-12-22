@@ -37,18 +37,18 @@
 
             <!-- Project 2: Historiatelo -->
             <Historiatelo 
-                showGifHistoriatelo={showGifHistoriatelo}
+            showGifHistoriatelo={showGifHistoriatelo}
+            />
+            <!-- Project 3: ListenStudy -->
+            <ListenStudyCard 
+                showGifListenStudy={showGifListenStudy}
             />
 
-            <!-- Project 3: GePro -->
+            <!-- Project 4: GePro -->
             <GePro 
                 showGifGepro={showGifGepro}
             />
 
-            <!-- Project 4: ListenStudy -->
-            <ListenStudyCard 
-                showGifListenStudy={showGifListenStudy}
-            />
         </div>
 
         <!-- GitHub Button or Contact Button -->

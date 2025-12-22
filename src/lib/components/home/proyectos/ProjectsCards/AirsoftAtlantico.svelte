@@ -1,25 +1,18 @@
 <script lang="ts">
-
     type Props = {
         showGif?: boolean;
-        onmouseenter?: boolean;
-        onmouseleave?: boolean;
     };
     let { showGif = $bindable(false) }: Props = $props();
 </script>
 
-
-<div class="group relative">
-                <!-- Background Decoration -->
-                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                
+<div class="group relative ">
                 <a
                     href="https://www.airsoftatlantico.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     onmouseenter={() => (showGif = true)}
                     onmouseleave={() => (showGif = false)}
-                    class="relative block"
+                    class="relative block shadow-md shadow-blue-500/20 rounded-3xl"
                 >
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-blue-500/50">
                         <!-- Project Image -->
