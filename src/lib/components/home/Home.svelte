@@ -11,27 +11,28 @@
 	}
 </script>
 
-<div class="mb:mt-10 mt-20 flex w-full flex-col items-center justify-center">
+<div class="mt-16 sm:mt-20 flex w-full flex-col items-center justify-center px-4 sm:px-0">
 	<!-- Contenido del Hero -->
 	<div class="flex w-full flex-col items-center justify-center">
 		<!-- Nombre con gradiente animado -->
 		<h1
-			class="gradient-text mb-6 text-center text-5xl leading-tight font-extrabold md:text-6xl lg:text-7xl"
+			class="gradient-text mb-6 text-center text-3xl sm:text-5xl leading-tight font-extrabold md:text-6xl lg:text-7xl"
 		>
 			Javier Hernández Pérez
 		</h1>
 
 		<!-- Subtítulo -->
 		<p class="mb-8 text-center text-xl font-light tracking-wide text-slate-300 md:text-2xl">
-			Full Stack Developer
+			Full Stack Developer · Especialista Frontend
 		</p>
 
 		<!-- Descripción -->
 		<p
-			class="mx-auto mb-10 max-w-md text-center text-base leading-relaxed text-slate-400 md:text-lg"
+			class="mx-auto mb-10 max-w-lg text-center text-base leading-relaxed text-slate-400 md:text-lg"
 		>
-			Empezando a crear experiencias web con tecnologías modernas como Angular 21, Svelte, TypeScript... y
-			diseño centrado en el usuario con TailwindCSS.
+			Creo interfaces pulcras y funcionales con Angular 21, Svelte y TypeScript.
+			Enfocado en la experiencia de usuario, la arquitectura de componentes limpia y
+			el diseño minimalista con TailwindCSS.
 		</p>
 		<!-- Botón de descarga de CV -->
 		<div class="mb-10">

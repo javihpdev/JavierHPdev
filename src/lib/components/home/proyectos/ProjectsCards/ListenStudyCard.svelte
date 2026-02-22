@@ -114,7 +114,7 @@
 						class="relative overflow-hidden rounded-full border-2 border-transparent bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 bg-clip-padding px-3 py-1 text-sm font-medium text-white"
 					>
 						<span
-							class="absolute inset-0 bg-gradient-to-r from-blue-500 via-green-500 via-red-500 to-yellow-500 opacity-50 blur-sm"
+							class="absolute inset-0 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500 opacity-50 blur-sm"
 						></span>
 						<span class="relative z-10">Google Cloud Text-to-Speech API</span>
 					</span>

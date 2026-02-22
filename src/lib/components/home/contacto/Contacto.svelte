@@ -28,14 +28,14 @@
 		<!-- Header Section -->
 		<div class="mb-16 text-center">
 			<h1
-				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text p-3 text-5xl font-bold text-transparent md:text-6xl"
+				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text p-3 text-3xl sm:text-5xl md:text-6xl font-bold text-transparent"
 			>
 				Contacta Conmigo
 			</h1>
 			<div class="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-blue-500 to-purple-600"></div>
 		</div>
 
-		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+		<div class="grid grid-cols-1 gap-8 lg:gap-12 lg:grid-cols-2">
 			<!-- Contact Info Section -->
 			<div class="space-y-8">
 				<!-- Contact Cards -->

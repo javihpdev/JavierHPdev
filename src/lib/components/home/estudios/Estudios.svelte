@@ -22,12 +22,12 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 		<!-- Header Section -->
 		<div class="mb-16 text-center">
 			<h1
-				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-5xl font-bold text-transparent md:text-6xl"
+				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-3xl sm:text-5xl md:text-6xl font-bold text-transparent"
 			>
 				Formación Académica
 			</h1>
 			<div class="mx-auto h-1 w-24 rounded-full bg-gradient-to-r from-blue-500 to-purple-600"></div>
-			<p class="mx-auto mt-6 max-w-3xl text-xl text-slate-400">
+			<p class="mx-auto mt-6 max-w-3xl text-base sm:text-xl text-slate-400">
 				Mi formación académica me ha proporcionado una base en desarrollo web y en las tecnologías
 				más demandadas del mercado como JavaScript, HTML, CSS, PHP y Bases de Datos: MySQL.
 			</p>
@@ -45,7 +45,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 				<!-- Technologies Grid -->
 				<div class="relative z-10">
 					<h3 class="mb-8 text-center text-2xl font-bold text-white">Tecnologías Aprendidas</h3>
-					<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+					<div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
 						<!-- JavaScript Card -->
 						<TechnologiesCards
 							divClass="group flex items-center justify-center rounded-2xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-orange-500/10 p-6 transition-all duration-300 hover:scale-105"
@@ -87,7 +87,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 				</div>
 
 				<!-- Achievement Highlights -->
-				<div class="relative z-10 mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+				<div class="relative z-10 mt-10 grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3">
 
                     <!-- Final Project  -->
 					<AchivementHighlights
@@ -132,7 +132,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 				href="https://goo.su/b9F3U4"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+				class="inline-flex transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
 			>
 				<span>Conocer más sobre LinkiaFP</span>
 				<svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

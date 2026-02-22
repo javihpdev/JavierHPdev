@@ -15,7 +15,7 @@
 		<!-- Header Section -->
 		<div class="mb-16 text-center">
 			<h1
-				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text p-3 text-5xl font-bold text-transparent md:text-6xl"
+				class="mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text p-3 text-3xl sm:text-5xl md:text-6xl font-bold text-transparent"
 			>
 				Experiencia Profesional
 			</h1>
@@ -45,7 +45,7 @@
 				href="https://tipomedia.com/"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+				class="inline-flex transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
 			>
 				<span>Ver más sobre TipoMedia</span>
 				<svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
