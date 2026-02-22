@@ -7,11 +7,6 @@
     import Experiencia from "../../../lib/components/home/experiencia/Experiencia.svelte";
 	import Footer from "$lib/components/common/Footer.svelte";
     import Home from "$lib/components/home/Home.svelte";
-    type Props = {
-        class?: string;
-    }
-
-    let { class: addClass=""} : Props = $props();
     
     let scrollY = $state(0);
 
@@ -33,13 +28,14 @@
 </script>
 
 
-<!-- Hero Section con efecto parallax -->
-<div 
-class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-900 via-gray-800 to-gray-800   relative"
-style="transform: translateY({scrollY * 0.5}px);"
->
+<!-- NavBar fuera del parallax para que position:fixed funcione correctamente -->
 <NavBar scrolled={scrollY > 50} class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 {scrollY > 50 ? 'bg-slate-900/80 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-slate-700/30' : 'bg-transparent'}" />
 
+<!-- Hero Section con efecto parallax -->
+<div 
+class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-900 via-gray-800 to-gray-800 relative overflow-hidden"
+style="transform: translateY({scrollY * 0.5}px);"
+>
 <Home />
 </div>
 
