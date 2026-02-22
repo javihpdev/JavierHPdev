@@ -3,8 +3,8 @@
 
 	function downloadFile() {
 		const link = document.createElement('a');
-		link.href = 'files/CV_JavierHernandezPerez.pdf';
-		link.download = 'CV_JavierHernandezPerez.pdf';
+		link.href = 'files/CV_DEV_JavierHernandezPerez.pdf';
+		link.download = 'CV_DEV_JavierHernandezPerez.pdf';
 		document.body.appendChild(link);
 		link.click();
 		document.body.removeChild(link);

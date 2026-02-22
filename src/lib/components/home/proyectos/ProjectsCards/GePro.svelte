@@ -1,12 +1,17 @@
 <script lang="ts">
     type Props = {
         showGifGepro?: boolean;
+        currentYear?: number;
     };
 
-    let { showGifGepro = $bindable(false) }: Props = $props();
+    let { class: addClass = '', currentYear, showGifGepro = $bindable(false) }: Props = $props();
+
 </script>
 
-<div id="gepro" class="group relative">
+
+<div id="gepro" class="group relative self-start">
+                <div class="absolute -inset-1 bg-gradient-to-r from-green-500 to-orange-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                
                 <a 
                     href="modules/proyectos/gepro" 
                     onmouseenter={() => (showGifGepro = true)}
@@ -59,7 +64,7 @@
                                         <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
                                         En desarrollo
                                     </span>
-                                    <span>2024</span>
+                                    <span>{currentYear}</span>
                                 </div>
                             </div>
                         </div>

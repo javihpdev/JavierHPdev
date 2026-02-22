@@ -1,11 +1,19 @@
 <script lang="ts">
 	type Props = {
 		showGifListenStudy?: boolean;
+		onmouseenter?: boolean;
+		onmouseleave?: boolean;
+		 currentYear?: number;
 	};
-	let { showGifListenStudy = $bindable(false) }: Props = $props();
+	let { showGifListenStudy = $bindable(false), currentYear }: Props = $props();
 </script>
 
-<div class="group relative">
+<div class="group relative self-start">
+	<!-- Background Decoration -->
+	<div
+		class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-blue-500 to-pink-500 opacity-25 blur transition duration-1000 group-hover:opacity-75 group-hover:duration-200"
+	></div>
+
 	<a
 		href="https://listen-study.vercel.app/"
 		target="_blank"
@@ -45,11 +53,11 @@
 			<!-- Project Info -->
 			<div class="space-y-4">
 				<div class="flex items-center justify-between">
-					<h3 class="text-2xl font-bold text-white transition-colors group-hover:text-cyan-400">
+					<h3 class="text-2xl font-bold text-white transition-colors group-hover:text-emerald-400">
 						ListenStudy
 					</h3>
                     
-					<div class="flex items-center text-slate-400 transition-colors group-hover:text-cyan-400">
+					<div class="flex items-center text-slate-400 transition-colors group-hover:text-emerald-400">
 						<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path
 								stroke-linecap="round"
@@ -125,7 +133,7 @@
 							<span class="mr-2 h-2 w-2 rounded-full bg-green-500"></span>
 							Live
 						</span>
-						<span>2025</span>
+						<span>{currentYear}</span>
 					</div>
 				</div>
 			</div>

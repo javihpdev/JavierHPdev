@@ -4,11 +4,15 @@
 	import GePro from "./ProjectsCards/GePro.svelte";
 	import Historiatelo from "./ProjectsCards/Historiatelo.svelte";
 	import ListenStudyCard from "./ProjectsCards/ListenStudyCard.svelte";
+	import Vistalist from "./ProjectsCards/Vistalist.svelte";
 
     let showGif = $state(false);
     let showGifHistoriatelo = $state(false);
     let showGifGepro = $state(false);
     let showGifListenStudy = $state(false);
+    let showGifVistalist = $state(false);
+
+    let currentYear: number = new Date().getFullYear();
 </script>
 
 <div 
@@ -31,21 +35,30 @@
         <!-- Projects Grid -->
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
             <!-- Project 1: Airsoft Atlántico -->
+            <!-- Project 5: Vistalist -->
+            <Vistalist 
+                currentYear={currentYear}
+                showGifVistalist={showGifVistalist}
+            />
            <AirsoftAtlantico 
+                currentYear={currentYear}
                 showGif={showGif}
               />
+            <!-- Project 4: ListenStudy -->
+            <ListenStudyCard 
+                currentYear={currentYear}
+                showGifListenStudy={showGifListenStudy}
+            />
 
             <!-- Project 2: Historiatelo -->
             <Historiatelo 
-            showGifHistoriatelo={showGifHistoriatelo}
-            />
-            <!-- Project 3: ListenStudy -->
-            <ListenStudyCard 
-                showGifListenStudy={showGifListenStudy}
+                currentYear={currentYear}
+                showGifHistoriatelo={showGifHistoriatelo}
             />
 
             <!-- Project 4: GePro -->
             <GePro 
+                currentYear={currentYear}
                 showGifGepro={showGifGepro}
             />
 

@@ -1,12 +1,17 @@
 <script lang="ts">
     type Props = {
         showGifHistoriatelo?: boolean;
+        currentYear?: number;
     };
 
-    let { showGifHistoriatelo = $bindable(false) }: Props = $props();
+    let { class: addClass = '', currentYear, showGifHistoriatelo = $bindable(false) }: Props = $props();
+
 </script>
 
-<div id="historiatelo" class="group relative">
+
+<div id="historiatelo" class="group relative self-start">
+                <div class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-[#00ACC9] rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                
                 <a 
                     href="https://historiatelo.org/" 
                     target="_blank" 

@@ -1,11 +1,18 @@
 <script lang="ts">
     type Props = {
         showGif?: boolean;
+        onmouseenter?: boolean;
+        onmouseleave?: boolean;
+        currentYear?: number;
     };
-    let { showGif = $bindable(false) }: Props = $props();
+    let { showGif = $bindable(false), currentYear }: Props = $props();
 </script>
 
-<div class="group relative ">
+
+<div class="group relative self-start">
+                <!-- Background Decoration -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                
                 <a
                     href="https://www.airsoftatlantico.com/"
                     target="_blank"
@@ -81,7 +88,7 @@
                                         <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                                         Live
                                     </span>
-                                    <span>2025</span>
+                                    <span>{currentYear}</span>
                                 </div>
                             </div>
                         </div>
