@@ -1,5 +1,6 @@
 <script lang="ts">
     type Props = {
+        class?: string;
         showGifHistoriatelo?: boolean;
         currentYear?: number;
     };
@@ -18,7 +19,7 @@
                     rel="noopener noreferrer"
                     onmouseenter={() => (showGifHistoriatelo = true)}
                     onmouseleave={() => (showGifHistoriatelo = false)}
-                    class="relative block shadow-md shadow-yellow-500/20 rounded-3xl"
+                    class="relative block"
                 >
                     <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 transition-all duration-300 hover:scale-105 hover:border-yellow-500/50">
                            <div class="mb-6 h-48 overflow-hidden rounded-2xl bg-gray-900 relative">

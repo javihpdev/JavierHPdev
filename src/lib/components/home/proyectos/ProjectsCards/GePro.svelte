@@ -2,6 +2,7 @@
     type Props = {
         showGifGepro?: boolean;
         currentYear?: number;
+        class?: string;
     };
 
     let { class: addClass = '', currentYear, showGifGepro = $bindable(false) }: Props = $props();

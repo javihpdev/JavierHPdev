@@ -30,7 +30,7 @@
 		<p
 			class="mx-auto mb-10 max-w-md text-center text-base leading-relaxed text-slate-400 md:text-lg"
 		>
-			Empezando a crear experiencias web con tecnologías modernas como Svelte, TypeScript... y
+			Empezando a crear experiencias web con tecnologías modernas como Angular 21, Svelte, TypeScript... y
 			diseño centrado en el usuario con TailwindCSS.
 		</p>
 		<!-- Botón de descarga de CV -->

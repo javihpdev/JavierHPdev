@@ -3,7 +3,7 @@
 		showGifListenStudy?: boolean;
 		onmouseenter?: boolean;
 		onmouseleave?: boolean;
-		 currentYear?: number;
+		currentYear?: number;
 	};
 	let { showGifListenStudy = $bindable(false), currentYear }: Props = $props();
 </script>
