@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
 
 /* ANCHOR - SE UTILIZA PARA ELIMINAR LAS FLECHAS (SPINNERS) DE INPUTS NUMÉRICOS */
 @layer utilities {
@@ -16,4 +14,9 @@
 }
 html {
     scroll-behavior: smooth;
+}
+
+@theme {
+  --color-gold: #C5A86B;
+   
 }
