@@ -32,12 +32,20 @@
 <NavBar scrolled={scrollY > 50} class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 {scrollY > 50 ? 'bg-slate-900/80 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-slate-700/30' : 'bg-transparent'}" />
 
 <!-- Hero Section con efecto parallax -->
-<div 
-class="flex h-screen items-center justify-center p-6 bg-gradient-to-br from-slate-900 via-gray-800 to-gray-800 relative overflow-hidden"
-style="transform: translateY({scrollY * 0.5}px);"
+<div
+    class="relative flex h-screen items-center justify-center overflow-hidden bg-[#060c1a] p-6"
+    style="transform: translateY({scrollY * 0.5}px);"
 >
-<Home />
+    <!-- Imagen de fondo en capa separada: opacity independiente del contenido -->
+    <div class="absolute inset-0 bg-[url(../images/imagenFondo.png)] bg-cover bg-center opacity-50"></div>
+
+    <!-- Contenido al 100% de opacidad -->
+    <Home />
+
+    <!-- Gradiente inferior: funde la imagen con el color del resto de la web -->
+    <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-[#060c1a] to-transparent"></div>
 </div>
+
 
 <!-- Sección de Proyectos -->
 <section class="relative z-10">

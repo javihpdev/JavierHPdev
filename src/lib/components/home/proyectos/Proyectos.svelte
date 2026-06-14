@@ -20,11 +20,12 @@
 
 <div 
     id="proyectos"
-    class="min-h-screen w-full bg-gray-800 py-20"
+    class="min-h-screen w-full bg-[#060c1a] py-20"
 >
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <!-- Header Section -->
         <div class="text-center mb-16">
+
             <h1 class="text-3xl sm:text-5xl md:text-6xl p-3 font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
                 Mis Proyectos
             </h1>
