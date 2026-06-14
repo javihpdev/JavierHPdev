@@ -37,11 +37,10 @@
     style="transform: translateY({scrollY * 0.5}px);"
 >
     <!-- Imagen de fondo en capa separada: opacity independiente del contenido -->
-    <div class="absolute inset-0 bg-[url(../images/imagenFondo.png)] bg-cover bg-center opacity-50"></div>
+    <div class="absolute inset-0 bg-[url(/images/imagenFondo.avif)] bg-cover bg-center opacity-50"></div>
 
     <!-- Contenido al 100% de opacidad -->
     <Home />
-
     <!-- Gradiente inferior: funde la imagen con el color del resto de la web -->
     <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-[#060c1a] to-transparent"></div>
 </div>
