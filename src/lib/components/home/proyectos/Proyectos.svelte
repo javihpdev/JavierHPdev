@@ -7,6 +7,7 @@
 	import Vistalist from "./ProjectsCards/Vistalist.svelte";
     import HangarCafe from "./ProjectsCards/HangarCafe.svelte";
     import JardinTacoronte from "./ProjectsCards/JardinTacoronte.svelte";
+    import LaCordillera from "./ProjectsCards/LaCordillera.svelte";
 
     let showGif = $state(false);
     let showGifHistoriatelo = $state(false);
@@ -15,6 +16,7 @@
     let showGifVistalist = $state(false);
     let showGifHangarCafe = $state(false);
     let showGifJardinTacoronte = $state(false);
+    let showGifLaCordillera = $state(false);
     let currentYear: number = new Date().getFullYear();
 </script>
 
@@ -50,6 +52,8 @@
             <HangarCafe currentYear={currentYear} showGifHangarCafe={showGifHangarCafe} />
 
             <JardinTacoronte currentYear={currentYear} showGifJardinTacoronte={showGifJardinTacoronte} />
+
+            <LaCordillera currentYear={currentYear} showGifLaCordillera={showGifLaCordillera} />
 
             <!-- Project 4: ListenStudy -->
             <ListenStudyCard 
