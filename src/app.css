@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #060c1a;
+}
+
 @theme {
   --color-gold: #C5A86B;
    

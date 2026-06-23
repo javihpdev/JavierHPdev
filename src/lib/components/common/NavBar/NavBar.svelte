@@ -10,7 +10,7 @@
     let { class: addClass="", scrolled = false } : Props = $props();
 
     const navLinks = [
-        { id: 'inicio', label: 'INICIO' },
+        { id: 'home', label: 'INICIO' },
         { id: 'proyectos', label: 'PROYECTOS' },
         { id: 'experiencia', label: 'EXPERIENCIA' },
         { id: 'estudios', label: 'ESTUDIOS' },
@@ -20,12 +20,12 @@
 
 <nav class="flex w-full max-w-7xl mx-auto items-center justify-between px-6 py-4 transition-all duration-500 {scrolled ? 'py-3' : 'py-5'} {addClass}">
     <!-- Logo -->
-    <a href="#inicio" class="group flex items-center gap-2">
+    <Enlace targetId="home" class="group flex items-center gap-2">
         <span class="text-2xl font-extrabold tracking-widest bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent transition-all duration-300 group-hover:from-purple-300 group-hover:to-cyan-400">
             JHPDEV
         </span>
         <span class="h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 opacity-75 transition-all duration-300 group-hover:scale-150 group-hover:opacity-100"></span>
-    </a>
+    </Enlace>
 
     <!-- Desktop Links -->
     <div class="hidden lg:flex items-center gap-1">

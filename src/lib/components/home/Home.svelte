@@ -11,7 +11,7 @@
 	}
 </script>
 
-<div class="mt-16 sm:mt-20 flex w-full flex-col items-center justify-center px-4 sm:px-0">
+<div id="home" class="mt-16 sm:mt-20 flex z-10 w-full flex-col items-center justify-center px-4 sm:px-0">
 	<!-- Contenido del Hero -->
 	<div class="flex w-full flex-col items-center justify-center">
 		<!-- Nombre con gradiente animado -->

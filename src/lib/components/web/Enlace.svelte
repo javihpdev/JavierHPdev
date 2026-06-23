@@ -19,6 +19,9 @@
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        if (targetId === "home") {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     }
 
 </script>

@@ -11,7 +11,7 @@
     }
 
     const navLinks = [
-        { id: 'inicio', label: 'Inicio' },
+        { id: 'home', label: 'Inicio' },
         { id: 'proyectos', label: 'Proyectos' },
         { id: 'experiencia', label: 'Experiencia' },
         { id: 'estudios', label: 'Estudios' },
