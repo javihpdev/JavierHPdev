@@ -89,7 +89,7 @@
 
 					<span
 						class="rounded-full border border-rose-600/30 bg-rose-600/20 px-3 py-1 text-sm font-medium text-rose-400"
-						>Angular 21</span
+						>Angular 22</span
 					>
 
 					<span
