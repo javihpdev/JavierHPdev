@@ -102,8 +102,8 @@
 				<div class="flex items-center justify-between border-t border-slate-700 pt-4">
 					<div class="flex items-center space-x-4 text-sm text-slate-400">
 						<span class="flex items-center">
-							<span class="mr-2 h-2 w-2 animate-pulse rounded-full bg-orange-500"></span>
-							En desarrollo
+							<span class="mr-2 h-2 w-2 animate-pulse rounded-full bg-green-500"></span>
+							Live
 						</span>
 						<span>{currentYear}</span>
 					</div>
