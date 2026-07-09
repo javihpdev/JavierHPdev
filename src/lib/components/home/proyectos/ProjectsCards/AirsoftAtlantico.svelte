@@ -1,78 +1,25 @@
 <script lang="ts">
+	import ProyectCard from "$lib/components/atoms/ProyectCard.svelte";
+
     type Props = {
         showGif?: boolean;
-        currentYear?: number;
     };
-    let { showGif = $bindable(false), currentYear }: Props = $props();
+    let { showGif = $bindable(false) }: Props = $props();
 </script>
 
-<div class="group relative">
-    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 to-purple-600 blur opacity-20 transition duration-1000 group-hover:opacity-60 group-hover:duration-200"></div>
-
-    <a
-        href="https://www.airsoftatlantico.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onmouseenter={() => (showGif = true)}
-        onmouseleave={() => (showGif = false)}
-        class="relative block h-full rounded-3xl shadow-md shadow-blue-500/20"
-    >
-        <div class="flex h-full flex-col rounded-3xl border border-slate-700/50 bg-slate-800/80 p-6 backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:border-blue-500/50 sm:p-8">
-            <!-- Image -->
-            <div class="relative mb-6 h-48 flex-shrink-0 overflow-hidden rounded-2xl bg-slate-950">
-                <img
-                    src="/gif/airsoft-preview.gif"
-                    class="h-full w-full object-cover md:hidden"
-                    alt="Vista previa del proyecto Airsoft Atlántico"
-                />
-                {#if showGif}
-                    <img
-                        src="/gif/airsoft-preview.gif"
-                        class="hidden h-full w-full object-cover md:block"
-                        alt="Vista previa del proyecto Airsoft Atlántico"
-                    />
-                {:else}
-                    <img
-                        src="/images/logo.png"
-                        class="hidden h-full w-full object-contain md:block"
-                        alt="Vista previa del proyecto Airsoft Atlántico"
-                    />
-                {/if}
-            </div>
-
-            <!-- Header -->
-            <div class="mb-3 flex items-start justify-between gap-3">
-                <h3 class="text-2xl font-bold leading-tight text-white transition-colors group-hover:text-blue-400">
-                    Airsoft Atlántico
-                </h3>
-                <div class="mt-1 flex-shrink-0 text-slate-500 transition-colors group-hover:text-blue-400">
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <p class="mb-4 flex-1 text-sm leading-relaxed text-slate-400">
-                Plataforma web moderna para comunidad de airsoft con diseño responsive y experiencia de usuario optimizada.
-            </p>
-
-            <!-- Tech Stack -->
-            <div class="mb-5 flex flex-wrap gap-2">
-                <span class="rounded-full border border-blue-500/30 bg-blue-500/20 px-3 py-1 text-sm font-medium text-blue-400">TypeScript</span>
-                <span class="rounded-full border border-orange-500/30 bg-orange-500/20 px-3 py-1 text-sm font-medium text-orange-400">Svelte</span>
-                <span class="rounded-full border border-cyan-500/30 bg-cyan-500/20 px-3 py-1 text-sm font-medium text-cyan-400">TailwindCSS</span>
-                <span class="rounded-full border border-yellow-500/30 bg-yellow-500/20 px-3 py-1 text-sm font-medium text-yellow-400">JavaScript</span>
-            </div>
-
-            <!-- Footer -->
-            <div class="flex items-center justify-between border-t border-slate-700 pt-4">
-                <span class="flex items-center gap-2 text-sm text-slate-400">
-                    <span class="h-2 w-2 rounded-full bg-green-500"></span>
-                    Live
-                </span>
-                <span class="text-sm text-slate-500">{currentYear}</span>
-            </div>
-        </div>
-    </a>
-</div>
+<ProyectCard
+    showGif={showGif}
+    hrefProyect="https://www.airsoftatlantico.com/"
+    srcGif="/gif/airsoft-preview.gif"
+    srcImage="/images/logo.png"
+    altGif="Vista previa del proyecto Airsoft Atlántico"
+    altImage="Vista previa del proyecto Airsoft Atlántico"
+    nameProyect="Airsoft Atlántico"
+    description="Plataforma web moderna para comunidad de airsoft con diseño responsive y experiencia de usuario optimizada."
+    bgGradient="from-blue-500 to-purple-600"
+    hoverTextName="group-hover:text-blue-400"
+    hoverBorder="hover:border-blue-500/50"
+    circleStateBg="bg-green-500"
+    shadowColor="shadow-blue-500/20"
+    techStack={['TypeScript', 'Svelte', 'TailwindCSS', 'JavaScript']}
+/>

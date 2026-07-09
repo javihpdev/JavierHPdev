@@ -8,16 +8,17 @@
     import HangarCafe from "./ProjectsCards/HangarCafe.svelte";
     import JardinTacoronte from "./ProjectsCards/JardinTacoronte.svelte";
     import LaCordillera from "./ProjectsCards/LaCordillera.svelte";
+	import VexcaTax from "./ProjectsCards/VexcaTax.svelte";
 
     let showGif = $state(false);
     let showGifHistoriatelo = $state(false);
     let showGifGepro = $state(false);
     let showGifListenStudy = $state(false);
     let showGifVistalist = $state(false);
+    let showGifVexcaTax = $state(false);
     let showGifHangarCafe = $state(false);
     let showGifJardinTacoronte = $state(false);
     let showGifLaCordillera = $state(false);
-    let currentYear: number = new Date().getFullYear();
 </script>
 
 <div 
@@ -42,35 +43,33 @@
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
             <!-- Project 1: Airsoft Atlántico -->
             <!-- Project 5: Vistalist -->
-            <Vistalist 
-                currentYear={currentYear}
+            <Vistalist
                 showGifVistalist={showGifVistalist}
             />
-           <AirsoftAtlantico 
-                currentYear={currentYear}
+            <VexcaTax
+                showGifVexcaTax={showGifVexcaTax}
+                />
+           <AirsoftAtlantico
                 showGif={showGif}
               />
-            <HangarCafe currentYear={currentYear} showGifHangarCafe={showGifHangarCafe} />
+            <HangarCafe showGifHangarCafe={showGifHangarCafe} />
 
-            <JardinTacoronte currentYear={currentYear} showGifJardinTacoronte={showGifJardinTacoronte} />
+            <JardinTacoronte showGifJardinTacoronte={showGifJardinTacoronte} />
 
-            <LaCordillera currentYear={currentYear} showGifLaCordillera={showGifLaCordillera} />
+            <LaCordillera showGifLaCordillera={showGifLaCordillera} />
 
             <!-- Project 4: ListenStudy -->
-            <ListenStudyCard 
-                currentYear={currentYear}
+            <ListenStudyCard
                 showGifListenStudy={showGifListenStudy}
             />
 
             <!-- Project 2: Historiatelo -->
-            <Historiatelo 
-                currentYear={currentYear}
+            <Historiatelo
                 showGifHistoriatelo={showGifHistoriatelo}
             />
 
             <!-- Project 4: GePro -->
-            <GePro 
-                currentYear={currentYear}
+            <GePro
                 showGifGepro={showGifGepro}
             />
 
