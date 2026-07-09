@@ -16,7 +16,7 @@
             <Copyright class="w-5 h-5 text-blue-400" />
             <span class="flex gap-3 items-center">
                 <span class="font-extrabold text-white text-lg tracking-wide">2026</span>
-                <span class="font-semibold text-blue-300 text-base tracking-tight">Javier Hernández Pérez</span>
+                <span class="font-semibold text-blue-300 uppercase text-base tracking-tight">Javier Hernández Pérez</span>
             </span>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-4">
