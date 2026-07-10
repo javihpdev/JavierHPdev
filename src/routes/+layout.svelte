@@ -1,6 +1,9 @@
 <script lang="ts">
-	import NavBar from '$lib/components/common/NavBar/NavBar.svelte';
     import '../app.css';
+    import { dev } from '$app/environment';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
+    injectAnalytics({ mode: dev ? 'development' : 'production' });
     let { children } = $props();
 </script>
 
