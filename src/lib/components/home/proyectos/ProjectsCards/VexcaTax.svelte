@@ -17,7 +17,7 @@
     altImage="Logo del proyecto VexcaTax"
     nameProyect="VexcaTax"
     description="Plataforma web moderna para la gestión de impuestos y contabilidad, diseñada para empresas y autónomos. Ofrece herramientas para calcular impuestos, generar informes financieros y mantener un registro"
-    bgGradient="from-blue-500 via-blue-600 to-blue-900"
+    bgGradient="from-blue-500 to-cyan-500"
     hoverTextName="group-hover:text-blue-500"
     hoverBorder="group-hover:border-blue-500/50"
     circleStateBg="bg-orange-500"

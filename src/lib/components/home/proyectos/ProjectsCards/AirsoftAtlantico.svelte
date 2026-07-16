@@ -15,11 +15,11 @@
     altGif="Vista previa del proyecto Airsoft Atlántico"
     altImage="Vista previa del proyecto Airsoft Atlántico"
     nameProyect="Airsoft Atlántico"
-    description="Plataforma web moderna para comunidad de airsoft con diseño responsive y experiencia de usuario optimizada."
-    bgGradient="from-blue-500 to-purple-600"
+    description="Web para la Asociación de Airsoft del Atlántico en Tenerife. Plataforma que ofrece información sobre la asociación, sus partidas legales y seguras, modalidades de juego (captura la bandera, baja confirmada, bomba), normativa de potencia y contacto para nuevos jugadores."
+    bgGradient="from-blue-500 to-white"
     hoverTextName="group-hover:text-blue-400"
     hoverBorder="hover:border-blue-500/50"
     circleStateBg="bg-green-500"
     shadowColor="shadow-blue-500/20"
-    techStack={['TypeScript', 'Svelte', 'TailwindCSS', 'JavaScript']}
+    techStack={['TypeScript', 'Svelte', 'TailwindCSS', 'Vercel']}
 />

@@ -16,7 +16,7 @@
     altImage="Vista previa del proyecto Vitalist"
     nameProyect="Vitalist"
     description="Plataforma de gestión de rutinas diarias con seguimiento de hábitos, autenticación segura y almacenamiento en la nube para sincronizar tus tareas en cualquier dispositivo"
-    bgGradient="from-cyan-500 to-blue-600"
+    bgGradient="from-cyan-500 to-green-600"
     hoverTextName="group-hover:text-cyan-400"
     hoverBorder="hover:border-cyan-500/50"
     circleStateBg="bg-orange-500"

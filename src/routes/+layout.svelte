@@ -2,8 +2,8 @@
     import '../app.css';
     import { dev } from '$app/environment';
     import { injectAnalytics } from '@vercel/analytics/sveltekit';
-
     injectAnalytics({ mode: dev ? 'development' : 'production' });
+    
     let { children } = $props();
 </script>
 
@@ -13,5 +13,4 @@
     <link rel="icon" type="image/png" href="images/ImagenPerfilPorfolio.webp">
 </svelte:head>
 
-
-        {@render children?.()}
+{@render children?.()}

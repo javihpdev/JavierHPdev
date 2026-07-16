@@ -10,9 +10,11 @@
             children?: any;
             companyClass?: string;
             colorText?: string;
+            href?:string;
+            target?:string
         };
     
-        let { class: addClass = '', divClass, iconClass, title, description, company, children, companyClass, colorText }: Props = $props();
+        let { class: addClass = '', divClass,href, target, iconClass, title, description, company, children, companyClass, colorText }: Props = $props();
 
 </script>
 
@@ -28,9 +30,10 @@
 	<h4 class="mb-2 text-lg font-semibold {colorText}"> {title}</h4>
 	<p class="text-sm text-slate-400">
 		 {description} <a
-			href="#gepro"
+			href={href}
+                        {target}
 			class={companyClass}
-			> {company}</a
+			>{company}</a
 		>
 	</p>
 </div>

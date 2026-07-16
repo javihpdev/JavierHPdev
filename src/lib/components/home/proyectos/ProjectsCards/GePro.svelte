@@ -21,7 +21,7 @@
     description="Sistema de gestión empresarial desarrollado como Trabajo Final de Grado. Solución integral para pequeñas y medianas empresas."
     bgGradient="from-green-500 to-orange-600"
     hoverTextName="group-hover:text-green-400"
-    hoverBorder="hover:border-green-500/50"
+    hoverBorder="hover:border-orange-500/50"
     circleStateBg="bg-orange-500"
     stateName="En desarrollo"
     shadowColor="shadow-green-500/20"

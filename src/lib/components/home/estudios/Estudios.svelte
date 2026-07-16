@@ -9,6 +9,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 	import Practice from '$lib/components/common/icons/AchievementIcons/Practice.svelte';
 	import Certification from '$lib/components/common/icons/AchievementIcons/Certification.svelte';
 	import InfoEstudios from './infoEstudios/InfoEstudios.svelte';
+	import ArrowLink from '$lib/components/common/icons/ArrowLink.svelte';
 
 	type Props = {
 		class?: string;
@@ -97,6 +98,7 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
                         colorText="text-green-400"
                         description="Desarrollo de Aplicaciones Web:"
                         company="GePro"
+                        href="/modules/proyectos/gepro"
                         companyClass="bg-gradient-to-r from-green-400 to-orange-400 bg-clip-text font-semibold text-transparent italic"
                         ><FinalProyect /></AchivementHighlights>
 
@@ -109,6 +111,8 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
                         colorText="text-blue-400"
                         description="Experiencia real en empresa:"
                         company="TipoMedia"
+						href="https://tipomedia.com/"
+						target="_blank"
                         companyClass="bg-gradient-to-r from-white to-pink-400 bg-clip-text font-semibold text-transparent italic"
                         ><Practice /></AchivementHighlights>
 
@@ -120,7 +124,9 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
                             colorText="text-purple-400"
                             description="Certificado Oficial:"
                             company="LinkiaFP"
-                            companyClass="bg-gradient-to-r from-white to-purple-400 bg-clip-text font-semibold text-transparent italic"
+							href="https://linkiafp.es/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb&utm_content=linkiafpadistancia"
+							target="_blank"
+							companyClass="bg-gradient-to-r from-white to-purple-400 bg-clip-text font-semibold text-transparent italic"
                         ><Certification /></AchivementHighlights>
 				</div>
 			</div>
@@ -129,20 +135,13 @@ import Css3 from '$lib/components/common/icons/TechnologiesIcons/Css3.svelte';
 		<!-- Conocer mas sobre LinkiaFP -->
 		<div class="text-center">
 			<a
-				href="https://goo.su/b9F3U4"
+				href="https://linkiafp.es/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb&utm_content=linkiafpadistancia"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+				class="inline-flex gap-2 transform items-center rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 sm:px-8 sm:py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
 			>
 				<span>Conocer más sobre LinkiaFP</span>
-				<svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-					></path>
-				</svg>
+				<ArrowLink />
 			</a>
 		</div>
 	</div>

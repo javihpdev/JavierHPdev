@@ -19,9 +19,9 @@
 	description="Web para el Centro Hípico La Cordillera. Plataforma que ofrece información sobre el centro, sus instalaciones, actividades ecuestres y servicios disponibles para aficionados y profesionales de la hípica."
 	bgGradient="from-green-500 to-slate-600"
 	hoverTextName="group-hover:text-green-400"
-	hoverBorder="hover:border-gold"
+	hoverBorder="hover:border-green-500"
 	circleStateBg="bg-green-500"
 	shadowColor="shadow-amber-500/20"
 	gifFit="object-contain"
-	techStack={['TypeScript', 'Angular 22', 'TailwindCSS']}
+	techStack={['TypeScript', 'Angular 22', 'TailwindCSS', 'Vercel']}
 />
